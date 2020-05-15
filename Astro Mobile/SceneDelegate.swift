@@ -18,7 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UISplitViewControllerDe
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let window = window else { return }
-        guard let splitViewController = window.rootViewController as? UISplitViewController else { return }
+        guard let tabViewController = window.rootViewController as? UITabBarController else { return }
+        guard let splitViewController = tabViewController.viewControllers?.first as? UISplitViewController else { return }
         guard let navigationController = splitViewController.viewControllers.last as? UINavigationController else { return }
         navigationController.topViewController?.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
         navigationController.topViewController?.navigationItem.leftItemsSupplementBackButton = true
