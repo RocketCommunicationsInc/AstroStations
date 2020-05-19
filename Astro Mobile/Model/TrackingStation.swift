@@ -1,0 +1,32 @@
+//
+//  TrackingStation.swift
+//  Astro Mobile
+//
+//  Created by rocketjeff on 5/15/20.
+//  Copyright © 2020 Rocket Communucations Inc. All rights reserved.
+//
+
+import Foundation
+import UIKit
+import MapKit
+
+
+//╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
+//
+//╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
+struct TrackingStation
+{
+    var name:String = ""
+    var callsign:String = ""
+    var location:CLLocationCoordinate2D = CLLocationCoordinate2D()
+  //  var image:UIImage?
+    
+    
+    init(name:String, callsign:String, location:CLLocationCoordinate2D) {
+        self.name = name
+        self.callsign = callsign
+        self.location = location
+        //self.image = UIImage(named: imageName)
+    }
+
+}
