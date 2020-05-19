@@ -16,14 +16,16 @@ import MapKit
 //╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 struct TrackingStation
 {
-    var name:String = ""
+    var fullName:String = ""
+    var shortName:String = ""
     var callsign:String = ""
     var location:CLLocationCoordinate2D = CLLocationCoordinate2D()
   //  var image:UIImage?
     
     
-    init(name:String, callsign:String, location:CLLocationCoordinate2D) {
-        self.name = name
+    init(fullName:String, shortName:String, callsign:String, location:CLLocationCoordinate2D) {
+        self.fullName = fullName
+        self.shortName = shortName
         self.callsign = callsign
         self.location = location
         //self.image = UIImage(named: imageName)

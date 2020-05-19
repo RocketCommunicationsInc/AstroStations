@@ -11,8 +11,8 @@
 		7C225999246F45ED002C1848 /* TrackingStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA81FBB246F3C98000778A1 /* TrackingStations.swift */; };
 		7CA6A4FC246357EA00177F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A4FB246357EA00177F87 /* AppDelegate.swift */; };
 		7CA6A4FE246357EA00177F87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A4FD246357EA00177F87 /* SceneDelegate.swift */; };
-		7CA6A500246357EA00177F87 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A4FF246357EA00177F87 /* MasterViewController.swift */; };
-		7CA6A502246357EA00177F87 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A501246357EA00177F87 /* DetailViewController.swift */; };
+		7CA6A500246357EA00177F87 /* StationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A4FF246357EA00177F87 /* StationsViewController.swift */; };
+		7CA6A502246357EA00177F87 /* StationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A501246357EA00177F87 /* StationDetailViewController.swift */; };
 		7CA6A505246357EA00177F87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA6A503246357EA00177F87 /* Main.storyboard */; };
 		7CA6A507246357EB00177F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA6A506246357EB00177F87 /* Assets.xcassets */; };
 		7CA6A50A246357EB00177F87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA6A508246357EB00177F87 /* LaunchScreen.storyboard */; };
@@ -22,8 +22,8 @@
 		7CA6A4F8246357EA00177F87 /* Astro Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Astro Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA6A4FB246357EA00177F87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CA6A4FD246357EA00177F87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7CA6A4FF246357EA00177F87 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		7CA6A501246357EA00177F87 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7CA6A4FF246357EA00177F87 /* StationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewController.swift; sourceTree = "<group>"; };
+		7CA6A501246357EA00177F87 /* StationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailViewController.swift; sourceTree = "<group>"; };
 		7CA6A504246357EA00177F87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CA6A506246357EB00177F87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CA6A509246357EB00177F87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,8 +64,8 @@
 			children = (
 				7CA6A4FB246357EA00177F87 /* AppDelegate.swift */,
 				7CA6A4FD246357EA00177F87 /* SceneDelegate.swift */,
-				7CA6A4FF246357EA00177F87 /* MasterViewController.swift */,
-				7CA6A501246357EA00177F87 /* DetailViewController.swift */,
+				7CA6A4FF246357EA00177F87 /* StationsViewController.swift */,
+				7CA6A501246357EA00177F87 /* StationDetailViewController.swift */,
 				7CA81FBD246F3E63000778A1 /* Model */,
 				7CA6A503246357EA00177F87 /* Main.storyboard */,
 				7CA6A506246357EB00177F87 /* Assets.xcassets */,
@@ -158,8 +158,8 @@
 				7C225998246F45EA002C1848 /* TrackingStation.swift in Sources */,
 				7CA6A4FC246357EA00177F87 /* AppDelegate.swift in Sources */,
 				7CA6A4FE246357EA00177F87 /* SceneDelegate.swift in Sources */,
-				7CA6A500246357EA00177F87 /* MasterViewController.swift in Sources */,
-				7CA6A502246357EA00177F87 /* DetailViewController.swift in Sources */,
+				7CA6A500246357EA00177F87 /* StationsViewController.swift in Sources */,
+				7CA6A502246357EA00177F87 /* StationDetailViewController.swift in Sources */,
 				7C225999246F45ED002C1848 /* TrackingStations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

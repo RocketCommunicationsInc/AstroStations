@@ -8,16 +8,23 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class StationDetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
+    
+    var station: TrackingStation? {
+        didSet {
+            // Update the view.
+            configureView()
+        }
+    }
 
 
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = station {
             if let label = detailDescriptionLabel {
-                label.text = detail.name
+                label.text = detail.fullName
             }
         }
     }
@@ -26,13 +33,6 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         configureView()
-    }
-
-    var station: TrackingStation? {
-        didSet {
-            // Update the view.
-            configureView()
-        }
     }
 
 

@@ -8,9 +8,9 @@
 
 import UIKit
 
-class MasterViewController: UITableViewController {
+class StationsViewController: UITableViewController {
 
-    var detailViewController: DetailViewController? = nil
+    var detailViewController: StationDetailViewController? = nil
     //var objects = [Any]()
 
 
@@ -47,7 +47,7 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let station = TrackingStations.sharedInstance.stations[indexPath.row]
-                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                let controller = (segue.destination as! UINavigationController).topViewController as! StationDetailViewController
                 controller.station = station
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
@@ -69,7 +69,7 @@ class MasterViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let station = TrackingStations.sharedInstance.stations[indexPath.row]
-        cell.textLabel!.text = station.name
+        cell.textLabel!.text = station.shortName
         return cell
     }
 
