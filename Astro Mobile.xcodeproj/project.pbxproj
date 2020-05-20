@@ -9,6 +9,21 @@
 /* Begin PBXBuildFile section */
 		7C225998246F45EA002C1848 /* TrackingStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA81FB9246F3B0D000778A1 /* TrackingStation.swift */; };
 		7C225999246F45ED002C1848 /* TrackingStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA81FBB246F3C98000778A1 /* TrackingStations.swift */; };
+		7C3F4B542475D647009FC19E /* AstroColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F4B4C2475D646009FC19E /* AstroColors.swift */; };
+		7C3F4B552475D647009FC19E /* AstroStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F4B4D2475D646009FC19E /* AstroStatus.swift */; };
+		7C3F4B562475D647009FC19E /* AstroSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F4B4E2475D646009FC19E /* AstroSymbols.swift */; };
+		7C3F4B572475D647009FC19E /* AstroSharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3F4B4F2475D646009FC19E /* AstroSharedAssets.xcassets */; };
+		7C3F4B582475D647009FC19E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7C3F4B502475D647009FC19E /* README.md */; };
+		7C3F4B592475D647009FC19E /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F4B512475D647009FC19E /* StatusView.swift */; };
+		7C3F4B5A2475D647009FC19E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7C3F4B522475D647009FC19E /* .gitignore */; };
+		7C3F4B5B2475D647009FC19E /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7C3F4B532475D647009FC19E /* .gitattributes */; };
+		7C7CEF30247472D3002E39D5 /* GUAM.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CEF29247472D2002E39D5 /* GUAM.jpg */; };
+		7C7CEF31247472D3002E39D5 /* COOK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CEF2A247472D3002E39D5 /* COOK.jpg */; };
+		7C7CEF32247472D3002E39D5 /* POGO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CEF2B247472D3002E39D5 /* POGO.jpg */; };
+		7C7CEF33247472D3002E39D5 /* REEF.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CEF2C247472D3002E39D5 /* REEF.jpg */; };
+		7C7CEF34247472D3002E39D5 /* LION.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CEF2D247472D3002E39D5 /* LION.jpg */; };
+		7C7CEF35247472D3002E39D5 /* BOSS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CEF2E247472D3002E39D5 /* BOSS.jpg */; };
+		7C7CEF36247472D3002E39D5 /* HULA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CEF2F247472D3002E39D5 /* HULA.jpg */; };
 		7CA6A4FC246357EA00177F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A4FB246357EA00177F87 /* AppDelegate.swift */; };
 		7CA6A4FE246357EA00177F87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A4FD246357EA00177F87 /* SceneDelegate.swift */; };
 		7CA6A500246357EA00177F87 /* StationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A4FF246357EA00177F87 /* StationsViewController.swift */; };
@@ -19,6 +34,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C3F4B4C2475D646009FC19E /* AstroColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroColors.swift; sourceTree = "<group>"; };
+		7C3F4B4D2475D646009FC19E /* AstroStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroStatus.swift; sourceTree = "<group>"; };
+		7C3F4B4E2475D646009FC19E /* AstroSymbols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroSymbols.swift; sourceTree = "<group>"; };
+		7C3F4B4F2475D646009FC19E /* AstroSharedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AstroSharedAssets.xcassets; sourceTree = "<group>"; };
+		7C3F4B502475D647009FC19E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7C3F4B512475D647009FC19E /* StatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		7C3F4B522475D647009FC19E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7C3F4B532475D647009FC19E /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		7C7CEF29247472D2002E39D5 /* GUAM.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GUAM.jpg; sourceTree = "<group>"; };
+		7C7CEF2A247472D3002E39D5 /* COOK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = COOK.jpg; sourceTree = "<group>"; };
+		7C7CEF2B247472D3002E39D5 /* POGO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = POGO.jpg; sourceTree = "<group>"; };
+		7C7CEF2C247472D3002E39D5 /* REEF.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = REEF.jpg; sourceTree = "<group>"; };
+		7C7CEF2D247472D3002E39D5 /* LION.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LION.jpg; sourceTree = "<group>"; };
+		7C7CEF2E247472D3002E39D5 /* BOSS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BOSS.jpg; sourceTree = "<group>"; };
+		7C7CEF2F247472D3002E39D5 /* HULA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HULA.jpg; sourceTree = "<group>"; };
 		7CA6A4F8246357EA00177F87 /* Astro Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Astro Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA6A4FB246357EA00177F87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CA6A4FD246357EA00177F87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,9 +73,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C3F4B4B2475D646009FC19E /* astro-swift-foundation */ = {
+			isa = PBXGroup;
+			children = (
+				7C3F4B4C2475D646009FC19E /* AstroColors.swift */,
+				7C3F4B4D2475D646009FC19E /* AstroStatus.swift */,
+				7C3F4B4E2475D646009FC19E /* AstroSymbols.swift */,
+				7C3F4B4F2475D646009FC19E /* AstroSharedAssets.xcassets */,
+				7C3F4B502475D647009FC19E /* README.md */,
+				7C3F4B512475D647009FC19E /* StatusView.swift */,
+				7C3F4B522475D647009FC19E /* .gitignore */,
+				7C3F4B532475D647009FC19E /* .gitattributes */,
+			);
+			path = "astro-swift-foundation";
+			sourceTree = "<group>";
+		};
+		7C7CEF37247472DF002E39D5 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7C7CEF2E247472D3002E39D5 /* BOSS.jpg */,
+				7C7CEF2A247472D3002E39D5 /* COOK.jpg */,
+				7C7CEF29247472D2002E39D5 /* GUAM.jpg */,
+				7C7CEF2F247472D3002E39D5 /* HULA.jpg */,
+				7C7CEF2D247472D3002E39D5 /* LION.jpg */,
+				7C7CEF2B247472D3002E39D5 /* POGO.jpg */,
+				7C7CEF2C247472D3002E39D5 /* REEF.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		7CA6A4EF246357EA00177F87 = {
 			isa = PBXGroup;
 			children = (
+				7C3F4B4B2475D646009FC19E /* astro-swift-foundation */,
 				7CA6A4FA246357EA00177F87 /* Astro Mobile */,
 				7CA6A4F9246357EA00177F87 /* Products */,
 			);
@@ -78,6 +138,7 @@
 		7CA81FBD246F3E63000778A1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7C7CEF37247472DF002E39D5 /* images */,
 				7CA81FBB246F3C98000778A1 /* TrackingStations.swift */,
 				7CA81FB9246F3B0D000778A1 /* TrackingStation.swift */,
 			);
@@ -143,8 +204,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CA6A50A246357EB00177F87 /* LaunchScreen.storyboard in Resources */,
+				7C7CEF34247472D3002E39D5 /* LION.jpg in Resources */,
+				7C7CEF35247472D3002E39D5 /* BOSS.jpg in Resources */,
+				7C7CEF33247472D3002E39D5 /* REEF.jpg in Resources */,
+				7C7CEF30247472D3002E39D5 /* GUAM.jpg in Resources */,
+				7C7CEF31247472D3002E39D5 /* COOK.jpg in Resources */,
+				7C3F4B582475D647009FC19E /* README.md in Resources */,
+				7C3F4B572475D647009FC19E /* AstroSharedAssets.xcassets in Resources */,
 				7CA6A507246357EB00177F87 /* Assets.xcassets in Resources */,
+				7C7CEF32247472D3002E39D5 /* POGO.jpg in Resources */,
 				7CA6A505246357EA00177F87 /* Main.storyboard in Resources */,
+				7C3F4B5B2475D647009FC19E /* .gitattributes in Resources */,
+				7C3F4B5A2475D647009FC19E /* .gitignore in Resources */,
+				7C7CEF36247472D3002E39D5 /* HULA.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,10 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C3F4B562475D647009FC19E /* AstroSymbols.swift in Sources */,
 				7C225998246F45EA002C1848 /* TrackingStation.swift in Sources */,
+				7C3F4B552475D647009FC19E /* AstroStatus.swift in Sources */,
 				7CA6A4FC246357EA00177F87 /* AppDelegate.swift in Sources */,
+				7C3F4B592475D647009FC19E /* StatusView.swift in Sources */,
 				7CA6A4FE246357EA00177F87 /* SceneDelegate.swift in Sources */,
 				7CA6A500246357EA00177F87 /* StationsViewController.swift in Sources */,
+				7C3F4B542475D647009FC19E /* AstroColors.swift in Sources */,
 				7CA6A502246357EA00177F87 /* StationDetailViewController.swift in Sources */,
 				7C225999246F45ED002C1848 /* TrackingStations.swift in Sources */,
 			);

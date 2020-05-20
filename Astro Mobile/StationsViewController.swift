@@ -51,6 +51,7 @@ class StationsViewController: UITableViewController {
                 controller.station = station
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
+//                controller.navigationItem.title = station.shortName
                 detailViewController = controller
             }
         }

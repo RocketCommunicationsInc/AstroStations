@@ -31,4 +31,9 @@ struct TrackingStation
         //self.image = UIImage(named: imageName)
     }
 
+    func getImage()->UIImage
+    {
+        let imageName = callsign + ".jpg"
+        return UIImage(named: imageName)!
+    }
 }
