@@ -24,6 +24,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UISplitViewControllerDe
         navigationController.topViewController?.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
         navigationController.topViewController?.navigationItem.leftItemsSupplementBackButton = true
         splitViewController.delegate = self
+        
+        // Set some global astro colors
+        // Can't set the navigation controller barTintColor here, it's not setup yet? Set in the view controller's viewDidLoad instead.
+        tabViewController.tabBar.barTintColor = .astroUIBar
+        window.tintColor = .astroUITint
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

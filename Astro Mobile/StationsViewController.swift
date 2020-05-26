@@ -25,6 +25,7 @@ class StationsViewController: UITableViewController {
 //            let controllers = split.viewControllers
 //            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
 //        }
+        self.navigationController?.navigationBar.barTintColor = .astroUIBar
     }
 
     override func viewWillAppear(_ animated: Bool) {
