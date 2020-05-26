@@ -26,6 +26,7 @@ class StationsViewController: UITableViewController {
 //            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
 //        }
         self.navigationController?.navigationBar.barTintColor = .astroUIBar
+        self.tableView.backgroundColor = .astroUITable
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -70,6 +71,7 @@ class StationsViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.backgroundColor = .astroUITable
         let station = TrackingStations.sharedInstance.stations[indexPath.row]
         cell.textLabel!.text = station.shortName
         return cell
