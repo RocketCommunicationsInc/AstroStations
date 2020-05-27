@@ -25,6 +25,7 @@ class StationsViewController: UITableViewController {
 //            let controllers = split.viewControllers
 //            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
 //        }
+        //MARK: Astro Customization
         self.navigationController?.navigationBar.barTintColor = .astroUIBar
         self.tableView.backgroundColor = .astroUITable
     }
@@ -71,6 +72,7 @@ class StationsViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        //MARK: Astro Customization
         cell.backgroundColor = .astroUITable
         let station = TrackingStations.sharedInstance.stations[indexPath.row]
         cell.textLabel!.text = station.shortName
