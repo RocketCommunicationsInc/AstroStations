@@ -72,7 +72,7 @@ class StationsViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! StationTableViewCell
         
         //MARK: Astro Customization
         // Set cell background color
@@ -83,13 +83,19 @@ class StationsViewController: UITableViewController {
         cell.selectedBackgroundView = selectedBackgroundView
         
         let station = TrackingStations.sharedInstance.stations[indexPath.row]
-        cell.textLabel!.text = station.shortName
+        cell.stationNameLabel!.text = station.shortName
         return cell
     }
 
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return false
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
+
+        
     }
 
     /*
