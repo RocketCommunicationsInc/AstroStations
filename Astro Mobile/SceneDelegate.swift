@@ -30,6 +30,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UISplitViewControllerDe
         // Can't set the navigation controller barTintColor here, it's not setup yet? Set in the view controller's viewDidLoad instead.
         tabViewController.tabBar.barTintColor = .astroUIBar
         window.tintColor = .astroUITint
+        
+        //window.overrideUserInterfaceStyle = .dark
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -27,7 +27,8 @@ class StationsViewController: UITableViewController {
 //        }
         //MARK: Astro Customization
         self.navigationController?.navigationBar.barTintColor = .astroUIBar
-        self.tableView.backgroundColor = .astroUITable
+        self.tableView.backgroundColor = .astroUITableCell
+        self.tableView.separatorColor = .astroUITableSeparator
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -72,8 +73,15 @@ class StationsViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
         //MARK: Astro Customization
-        cell.backgroundColor = .astroUITable
+        // Set cell background color
+        cell.backgroundColor = .astroUITableCell
+        // Install a view to host the selected cell color
+        let selectedBackgroundView = UIView()
+        selectedBackgroundView.backgroundColor = .astroUITableSelectedCell
+        cell.selectedBackgroundView = selectedBackgroundView
+        
         let station = TrackingStations.sharedInstance.stations[indexPath.row]
         cell.textLabel!.text = station.shortName
         return cell
