@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C12C7672481BB1F00DBEB1B /* StationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C12C7662481BB1F00DBEB1B /* StationTableViewCell.swift */; };
 		7C177F49247DD4DE00D965EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C177F48247DD4DE00D965EA /* Assets.xcassets */; };
 		7C225998246F45EA002C1848 /* TrackingStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA81FB9246F3B0D000778A1 /* TrackingStation.swift */; };
 		7C225999246F45ED002C1848 /* TrackingStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA81FBB246F3C98000778A1 /* TrackingStations.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C12C7662481BB1F00DBEB1B /* StationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTableViewCell.swift; sourceTree = "<group>"; };
 		7C177F48247DD4DE00D965EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C3F4B4C2475D646009FC19E /* AstroColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroColors.swift; sourceTree = "<group>"; };
 		7C3F4B4D2475D646009FC19E /* AstroStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroStatus.swift; sourceTree = "<group>"; };
@@ -75,9 +77,9 @@
 				7C3F4B4C2475D646009FC19E /* AstroColors.swift */,
 				7C3F4B4D2475D646009FC19E /* AstroStatus.swift */,
 				7C3F4B4E2475D646009FC19E /* AstroSymbols.swift */,
+				7C3F4B512475D647009FC19E /* StatusView.swift */,
 				7C3F4B4F2475D646009FC19E /* AstroSharedAssets.xcassets */,
 				7C3F4B502475D647009FC19E /* README.md */,
-				7C3F4B512475D647009FC19E /* StatusView.swift */,
 			);
 			path = "astro-swift-foundation";
 			sourceTree = "<group>";
@@ -119,6 +121,7 @@
 				7CA6A4FB246357EA00177F87 /* AppDelegate.swift */,
 				7CA6A4FD246357EA00177F87 /* SceneDelegate.swift */,
 				7CA6A4FF246357EA00177F87 /* StationsViewController.swift */,
+				7C12C7662481BB1F00DBEB1B /* StationTableViewCell.swift */,
 				7CA6A501246357EA00177F87 /* StationDetailViewController.swift */,
 				7CA81FBD246F3E63000778A1 /* Model */,
 				7CA6A503246357EA00177F87 /* Main.storyboard */,
@@ -222,6 +225,7 @@
 				7C3F4B562475D647009FC19E /* AstroSymbols.swift in Sources */,
 				7C225998246F45EA002C1848 /* TrackingStation.swift in Sources */,
 				7C3F4B552475D647009FC19E /* AstroStatus.swift in Sources */,
+				7C12C7672481BB1F00DBEB1B /* StationTableViewCell.swift in Sources */,
 				7CA6A4FC246357EA00177F87 /* AppDelegate.swift in Sources */,
 				7C3F4B592475D647009FC19E /* StatusView.swift in Sources */,
 				7CA6A4FE246357EA00177F87 /* SceneDelegate.swift in Sources */,
