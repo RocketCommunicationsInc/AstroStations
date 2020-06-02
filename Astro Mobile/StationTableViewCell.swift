@@ -19,7 +19,7 @@ class StationTableViewCell: UITableViewCell {
         statusView.setAstroStatus(AstroStatus.randomStatus())
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        if (!appDelegate.astroCustomizedUI)
+        if (!appDelegate.useAstroColors)
         {
             statusView.isHidden = true
         }

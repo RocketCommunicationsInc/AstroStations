@@ -26,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UISplitViewControllerDe
         splitViewController.delegate = self
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        if (appDelegate.astroCustomizedUI)
+        if (appDelegate.useAstroColors)
         {
             //MARK: Astro Customization
             // Set some global astro colors

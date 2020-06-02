@@ -27,7 +27,7 @@ class StationsViewController: UITableViewController {
 //        }
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        if (appDelegate.astroCustomizedUI)
+        if (appDelegate.useAstroColors)
         {
             //MARK: Astro Customization
             self.navigationController?.navigationBar.barTintColor = .astroUIBar
@@ -84,7 +84,7 @@ class StationsViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! StationTableViewCell
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        if (appDelegate.astroCustomizedUI)
+        if (appDelegate.useAstroColors)
         {
             //MARK: Astro Customization
             // Set cell background color

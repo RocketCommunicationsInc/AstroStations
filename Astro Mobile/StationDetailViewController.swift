@@ -52,7 +52,7 @@ class StationDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        if (appDelegate.astroCustomizedUI)
+        if (appDelegate.useAstroColors)
         {
             //MARK: Astro Customization
             self.navigationController?.navigationBar.barTintColor = .astroUIBar
