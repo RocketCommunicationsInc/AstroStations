@@ -145,11 +145,21 @@
         <scene sceneID="B2b-Mx-hRG">
             <objects>
                 <viewController id="3Ae-4C-WPR" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CtH-YQ-riX">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CtH-YQ-riX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ewx-Fh-h9H">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="DaB-IP-Xlu"/>
+                        <constraints>
+                            <constraint firstItem="ewx-Fh-h9H" firstAttribute="top" secondItem="CtH-YQ-riX" secondAttribute="top" id="AE3-Bk-FbX"/>
+                            <constraint firstItem="ewx-Fh-h9H" firstAttribute="leading" secondItem="CtH-YQ-riX" secondAttribute="leading" id="TyH-HZ-3eD"/>
+                            <constraint firstAttribute="trailing" secondItem="ewx-Fh-h9H" secondAttribute="trailing" id="nFS-Jh-Ruz"/>
+                            <constraint firstAttribute="bottom" secondItem="ewx-Fh-h9H" secondAttribute="bottom" id="qy1-te-Gjp"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="MWB-a1-SxY"/>
                 </viewController>
