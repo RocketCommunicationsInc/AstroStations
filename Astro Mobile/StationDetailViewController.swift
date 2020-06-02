@@ -50,9 +50,18 @@ class StationDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        //MARK: Astro Customization
-        self.navigationController?.navigationBar.barTintColor = .astroUIBar
-        self.view.backgroundColor = .astroUIBackground
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        if (appDelegate.astroCustomizedUI)
+        {
+            //MARK: Astro Customization
+            self.navigationController?.navigationBar.barTintColor = .astroUIBar
+            self.view.backgroundColor = .astroUIBackground
+        }
+        else
+        {
+            self.view.backgroundColor = .systemBackground
+        }
         configureView()
     }
 

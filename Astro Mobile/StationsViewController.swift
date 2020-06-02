@@ -25,10 +25,15 @@ class StationsViewController: UITableViewController {
 //            let controllers = split.viewControllers
 //            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
 //        }
-        //MARK: Astro Customization
-        self.navigationController?.navigationBar.barTintColor = .astroUIBar
-        self.tableView.backgroundColor = .astroUITableCell
-        self.tableView.separatorColor = .astroUITableSeparator
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        if (appDelegate.astroCustomizedUI)
+        {
+            //MARK: Astro Customization
+            self.navigationController?.navigationBar.barTintColor = .astroUIBar
+            self.tableView.backgroundColor = .astroUITableCell
+            self.tableView.separatorColor = .astroUITableSeparator
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -74,14 +79,17 @@ class StationsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! StationTableViewCell
         
-        //MARK: Astro Customization
-        // Set cell background color
-        cell.backgroundColor = .astroUITableCell
-        // Install a view to host the selected cell color
-        let selectedBackgroundView = UIView()
-        selectedBackgroundView.backgroundColor = .astroUITableSelectedCell
-        cell.selectedBackgroundView = selectedBackgroundView
-        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        if (appDelegate.astroCustomizedUI)
+        {
+            //MARK: Astro Customization
+            // Set cell background color
+            cell.backgroundColor = .astroUITableCell
+            // Install a view to host the selected cell color
+            let selectedBackgroundView = UIView()
+            selectedBackgroundView.backgroundColor = .astroUITableSelectedCell
+            cell.selectedBackgroundView = selectedBackgroundView
+        }
         let station = TrackingStations.sharedInstance.stations[indexPath.row]
         cell.stationNameLabel!.text = station.shortName
         return cell

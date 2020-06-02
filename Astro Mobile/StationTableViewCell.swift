@@ -17,6 +17,13 @@ class StationTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         statusView.setAstroStatus(AstroStatus.randomStatus())
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        if (!appDelegate.astroCustomizedUI)
+        {
+            statusView.isHidden = true
+        }
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

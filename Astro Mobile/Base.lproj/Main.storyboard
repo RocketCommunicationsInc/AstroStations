@@ -81,7 +81,7 @@
                         <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Station Details" id="mOI-FS-AaM"/>
+                    <navigationItem key="navigationItem" id="mOI-FS-AaM"/>
                     <connections>
                         <outlet property="callsignLabel" destination="kL4-vc-vg4" id="e5F-g9-t6Q"/>
                         <outlet property="fullNameLabel" destination="W8P-Bk-gKX" id="mXS-3D-LG1"/>
@@ -127,11 +127,11 @@
             </objects>
             <point key="canvasLocation" x="-1829" y="-60"/>
         </scene>
-        <!--Stations-->
+        <!--Tracking Stations-->
         <scene sceneID="Nki-YV-4Qg">
             <objects>
                 <splitViewController id="H1p-Uh-vWS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Stations" image="antenna.radiowaves.left.and.right" catalog="system" id="jVw-3K-e26"/>
+                    <tabBarItem key="tabBarItem" title="Tracking Stations" image="antenna.radiowaves.left.and.right" catalog="system" id="jVw-3K-e26"/>
                     <toolbarItems/>
                     <connections>
                         <segue destination="RMx-3f-FxP" kind="relationship" relationship="masterViewController" id="BlO-5A-QYV"/>
