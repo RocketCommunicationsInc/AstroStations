@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -32,49 +33,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="f3T-cu-VAx">
-                                <rect key="frame" x="0.0" y="88" width="414" height="580.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="f3T-cu-VAx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Full Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="W8P-Bk-gKX">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9P-DX-TL8">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="358.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NDj-Ex-Jrt">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="358.5"/>
+                                            </imageView>
+                                            <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfh-YN-C90" userLabel="Title View">
+                                                <rect key="frame" x="8" y="8" width="398" height="56"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Full Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zcs-zP-0Ye">
+                                                        <rect key="frame" x="4" y="4" width="390" height="28"/>
+                                                        <color key="backgroundColor" name="astroStatusCriticalColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="28" id="yDh-lf-jMI"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Callsign" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAK-5b-47y">
+                                                        <rect key="frame" x="4" y="34" width="390" height="16"/>
+                                                        <color key="backgroundColor" name="astroStatusNormalColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="16" id="nng-rz-4Lr"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="GAK-5b-47y" secondAttribute="trailing" constant="4" id="3T3-8U-T6x"/>
+                                                    <constraint firstItem="GAK-5b-47y" firstAttribute="leading" secondItem="lfh-YN-C90" secondAttribute="leading" constant="4" id="8KL-Dc-q6S"/>
+                                                    <constraint firstAttribute="height" constant="56" id="QnB-1h-nOc"/>
+                                                    <constraint firstItem="GAK-5b-47y" firstAttribute="top" secondItem="Zcs-zP-0Ye" secondAttribute="bottom" constant="2" id="hqF-4B-xyk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Zcs-zP-0Ye" secondAttribute="trailing" constant="4" id="l8j-Pd-dh3"/>
+                                                    <constraint firstItem="Zcs-zP-0Ye" firstAttribute="top" secondItem="lfh-YN-C90" secondAttribute="top" constant="4" id="w5G-6s-lB4"/>
+                                                    <constraint firstItem="Zcs-zP-0Ye" firstAttribute="leading" secondItem="lfh-YN-C90" secondAttribute="leading" constant="4" id="xtK-dr-pKB"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="rPR-yq-TM0"/>
+                                            <constraint firstItem="lfh-YN-C90" firstAttribute="leading" secondItem="o9P-DX-TL8" secondAttribute="leading" constant="8" id="4Sa-R6-V2A"/>
+                                            <constraint firstItem="NDj-Ex-Jrt" firstAttribute="leading" secondItem="o9P-DX-TL8" secondAttribute="leading" id="Mqf-iL-TaV"/>
+                                            <constraint firstItem="NDj-Ex-Jrt" firstAttribute="top" secondItem="o9P-DX-TL8" secondAttribute="top" id="TMv-GO-KKP"/>
+                                            <constraint firstAttribute="bottom" secondItem="NDj-Ex-Jrt" secondAttribute="bottom" id="W1q-ce-YOt"/>
+                                            <constraint firstAttribute="trailing" secondItem="lfh-YN-C90" secondAttribute="trailing" constant="8" id="cHT-b2-42k"/>
+                                            <constraint firstItem="lfh-YN-C90" firstAttribute="top" secondItem="o9P-DX-TL8" secondAttribute="top" constant="8" id="eR7-LR-2vl"/>
+                                            <constraint firstAttribute="trailing" secondItem="NDj-Ex-Jrt" secondAttribute="trailing" id="xV7-Kp-zNb"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Callsign" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kL4-vc-vg4">
-                                        <rect key="frame" x="0.0" y="58" width="414" height="25"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="oNB-M4-JeZ"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NDj-Ex-Jrt">
-                                        <rect key="frame" x="0.0" y="91" width="414" height="236.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" secondItem="NDj-Ex-Jrt" secondAttribute="width" multiplier="4:7" id="zWi-5P-uGW"/>
-                                        </constraints>
-                                    </imageView>
+                                    </view>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="i8M-9I-CHT">
-                                        <rect key="frame" x="0.0" y="335.5" width="414" height="207"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" secondItem="i8M-9I-CHT" secondAttribute="width" multiplier="1:2" id="6i8-1y-qrE"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="366.5" width="414" height="358.5"/>
                                     </mapView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkv-QD-k2l">
-                                        <rect key="frame" x="0.0" y="550.5" width="414" height="30"/>
-                                        <state key="normal" title="Open in Maps"/>
-                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="i8M-9I-CHT" firstAttribute="leading" secondItem="f3T-cu-VAx" secondAttribute="leadingMargin" id="ZWc-VW-P0G"/>
+                                    <constraint firstItem="i8M-9I-CHT" firstAttribute="bottom" secondItem="f3T-cu-VAx" secondAttribute="bottomMargin" id="k46-wW-WCI"/>
+                                    <constraint firstItem="i8M-9I-CHT" firstAttribute="trailing" secondItem="f3T-cu-VAx" secondAttribute="trailingMargin" id="yzA-P5-XIk"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="f3T-cu-VAx" firstAttribute="trailing" secondItem="VUw-jc-0yf" secondAttribute="trailing" id="FNC-vM-zQc"/>
+                            <constraint firstItem="VUw-jc-0yf" firstAttribute="bottom" secondItem="f3T-cu-VAx" secondAttribute="bottom" id="OCW-zP-tpH"/>
                             <constraint firstItem="f3T-cu-VAx" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" id="ZXi-0M-mC9"/>
                             <constraint firstItem="f3T-cu-VAx" firstAttribute="top" secondItem="VUw-jc-0yf" secondAttribute="top" id="hOh-W7-L3m"/>
                         </constraints>
@@ -83,15 +112,15 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="mOI-FS-AaM"/>
                     <connections>
-                        <outlet property="callsignLabel" destination="kL4-vc-vg4" id="e5F-g9-t6Q"/>
-                        <outlet property="fullNameLabel" destination="W8P-Bk-gKX" id="mXS-3D-LG1"/>
+                        <outlet property="callsignLabel" destination="GAK-5b-47y" id="iBl-Ff-9c3"/>
+                        <outlet property="fullNameLabel" destination="Zcs-zP-0Ye" id="RvM-Lx-0Bm"/>
                         <outlet property="imageView" destination="NDj-Ex-Jrt" id="XoQ-sY-M5U"/>
                         <outlet property="mapView" destination="i8M-9I-CHT" id="5wJ-7I-rcN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="705.79710144927537" y="127.23214285714285"/>
+            <point key="canvasLocation" x="704.34782608695662" y="127.23214285714285"/>
         </scene>
         <!--Map-->
         <scene sceneID="B2b-Mx-hRG">
@@ -222,5 +251,11 @@
     <resources>
         <image name="antenna.radiowaves.left.and.right" catalog="system" width="128" height="109"/>
         <image name="map" catalog="system" width="128" height="113"/>
+        <namedColor name="astroStatusCriticalColor">
+            <color red="1" green="0.16500000655651093" blue="0.016000000759959221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="astroStatusNormalColor">
+            <color red="0.0" green="0.88599997758865356" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

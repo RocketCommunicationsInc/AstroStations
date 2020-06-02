@@ -34,6 +34,10 @@ class StationsViewController: UITableViewController {
             self.tableView.backgroundColor = .astroUITableCell
             self.tableView.separatorColor = .astroUITableSeparator
         }
+        
+        // set initial selection
+//        self.tableView.selectRow(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: .top)
+
     }
 
     override func viewWillAppear(_ animated: Bool) {
