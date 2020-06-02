@@ -42,9 +42,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="358.5"/>
                                             </imageView>
                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bq1-qb-qAQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                                <rect key="frame" x="8" y="8" width="398" height="60"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XgQ-g0-AxU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0P-ft-lAZ">
@@ -61,7 +61,7 @@
                                                             </vibrancyEffect>
                                                         </visualEffectView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uRG-wg-Leg">
-                                                            <rect key="frame" x="4" y="0.0" width="406" height="34"/>
+                                                            <rect key="frame" x="4" y="0.0" width="390" height="34"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="34" id="Vpg-sW-UAE"/>
                                                             </constraints>
@@ -70,7 +70,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Callsign" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIg-Dp-ugV">
-                                                            <rect key="frame" x="4" y="38" width="406" height="18"/>
+                                                            <rect key="frame" x="4" y="38" width="390" height="18"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="18" id="Owh-5j-0gm"/>
                                                             </constraints>
@@ -99,12 +99,12 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="Bq1-qb-qAQ" firstAttribute="leading" secondItem="o9P-DX-TL8" secondAttribute="leading" id="Ea3-Uj-100"/>
+                                            <constraint firstItem="Bq1-qb-qAQ" firstAttribute="leading" secondItem="o9P-DX-TL8" secondAttribute="leading" constant="8" id="Ea3-Uj-100"/>
                                             <constraint firstItem="NDj-Ex-Jrt" firstAttribute="leading" secondItem="o9P-DX-TL8" secondAttribute="leading" id="Mqf-iL-TaV"/>
                                             <constraint firstItem="NDj-Ex-Jrt" firstAttribute="top" secondItem="o9P-DX-TL8" secondAttribute="top" id="TMv-GO-KKP"/>
                                             <constraint firstAttribute="bottom" secondItem="NDj-Ex-Jrt" secondAttribute="bottom" id="W1q-ce-YOt"/>
-                                            <constraint firstAttribute="trailing" secondItem="Bq1-qb-qAQ" secondAttribute="trailing" id="aAV-dY-sYR"/>
-                                            <constraint firstItem="Bq1-qb-qAQ" firstAttribute="top" secondItem="o9P-DX-TL8" secondAttribute="top" id="g6x-l5-Z3s"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bq1-qb-qAQ" secondAttribute="trailing" constant="8" id="aAV-dY-sYR"/>
+                                            <constraint firstItem="Bq1-qb-qAQ" firstAttribute="top" secondItem="o9P-DX-TL8" secondAttribute="top" constant="8" id="g6x-l5-Z3s"/>
                                             <constraint firstAttribute="trailing" secondItem="NDj-Ex-Jrt" secondAttribute="trailing" id="xV7-Kp-zNb"/>
                                         </constraints>
                                     </view>
