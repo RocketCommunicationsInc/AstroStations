@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -42,50 +41,70 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NDj-Ex-Jrt">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="358.5"/>
                                             </imageView>
-                                            <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfh-YN-C90" userLabel="Title View">
-                                                <rect key="frame" x="8" y="8" width="398" height="56"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Full Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zcs-zP-0Ye">
-                                                        <rect key="frame" x="4" y="4" width="390" height="28"/>
-                                                        <color key="backgroundColor" name="astroStatusCriticalColor"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="28" id="yDh-lf-jMI"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Callsign" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAK-5b-47y">
-                                                        <rect key="frame" x="4" y="34" width="390" height="16"/>
-                                                        <color key="backgroundColor" name="astroStatusNormalColor"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="16" id="nng-rz-4Lr"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bq1-qb-qAQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XgQ-g0-AxU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0P-ft-lAZ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="174" height="0.0"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jmb-EB-mb1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="174" height="0.0"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            </view>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="174" id="W49-HN-w0d"/>
+                                                            </constraints>
+                                                            <vibrancyEffect style="label">
+                                                                <blurEffect style="regular"/>
+                                                            </vibrancyEffect>
+                                                        </visualEffectView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uRG-wg-Leg">
+                                                            <rect key="frame" x="4" y="0.0" width="406" height="34"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="34" id="Vpg-sW-UAE"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Callsign" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIg-Dp-ugV">
+                                                            <rect key="frame" x="4" y="38" width="406" height="18"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="18" id="Owh-5j-0gm"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="uRG-wg-Leg" firstAttribute="top" secondItem="n0P-ft-lAZ" secondAttribute="bottom" id="07Q-B1-MOS"/>
+                                                        <constraint firstAttribute="trailing" secondItem="PIg-Dp-ugV" secondAttribute="trailing" constant="4" id="2p0-aN-xUN"/>
+                                                        <constraint firstItem="PIg-Dp-ugV" firstAttribute="leading" secondItem="XgQ-g0-AxU" secondAttribute="leading" constant="4" id="84J-Kw-wwe"/>
+                                                        <constraint firstItem="uRG-wg-Leg" firstAttribute="leading" secondItem="XgQ-g0-AxU" secondAttribute="leading" constant="4" id="Mqm-ou-TsL"/>
+                                                        <constraint firstItem="n0P-ft-lAZ" firstAttribute="leading" secondItem="XgQ-g0-AxU" secondAttribute="leading" id="X4e-kg-Qxp"/>
+                                                        <constraint firstItem="n0P-ft-lAZ" firstAttribute="top" secondItem="XgQ-g0-AxU" secondAttribute="top" id="bTQ-Gm-pPZ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="uRG-wg-Leg" secondAttribute="trailing" constant="4" id="nA4-ZS-BBk"/>
+                                                        <constraint firstItem="PIg-Dp-ugV" firstAttribute="top" secondItem="uRG-wg-Leg" secondAttribute="bottom" constant="4" id="pGe-JB-IDw"/>
+                                                        <constraint firstItem="n0P-ft-lAZ" firstAttribute="top" secondItem="uRG-wg-Leg" secondAttribute="top" id="skE-aS-UPi"/>
+                                                    </constraints>
+                                                </view>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="GAK-5b-47y" secondAttribute="trailing" constant="4" id="3T3-8U-T6x"/>
-                                                    <constraint firstItem="GAK-5b-47y" firstAttribute="leading" secondItem="lfh-YN-C90" secondAttribute="leading" constant="4" id="8KL-Dc-q6S"/>
-                                                    <constraint firstAttribute="height" constant="56" id="QnB-1h-nOc"/>
-                                                    <constraint firstItem="GAK-5b-47y" firstAttribute="top" secondItem="Zcs-zP-0Ye" secondAttribute="bottom" constant="2" id="hqF-4B-xyk"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Zcs-zP-0Ye" secondAttribute="trailing" constant="4" id="l8j-Pd-dh3"/>
-                                                    <constraint firstItem="Zcs-zP-0Ye" firstAttribute="top" secondItem="lfh-YN-C90" secondAttribute="top" constant="4" id="w5G-6s-lB4"/>
-                                                    <constraint firstItem="Zcs-zP-0Ye" firstAttribute="leading" secondItem="lfh-YN-C90" secondAttribute="leading" constant="4" id="xtK-dr-pKB"/>
+                                                    <constraint firstAttribute="height" constant="60" id="clQ-ae-5F6"/>
                                                 </constraints>
-                                            </view>
+                                                <blurEffect style="regular"/>
+                                            </visualEffectView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="lfh-YN-C90" firstAttribute="leading" secondItem="o9P-DX-TL8" secondAttribute="leading" constant="8" id="4Sa-R6-V2A"/>
+                                            <constraint firstItem="Bq1-qb-qAQ" firstAttribute="leading" secondItem="o9P-DX-TL8" secondAttribute="leading" id="Ea3-Uj-100"/>
                                             <constraint firstItem="NDj-Ex-Jrt" firstAttribute="leading" secondItem="o9P-DX-TL8" secondAttribute="leading" id="Mqf-iL-TaV"/>
                                             <constraint firstItem="NDj-Ex-Jrt" firstAttribute="top" secondItem="o9P-DX-TL8" secondAttribute="top" id="TMv-GO-KKP"/>
                                             <constraint firstAttribute="bottom" secondItem="NDj-Ex-Jrt" secondAttribute="bottom" id="W1q-ce-YOt"/>
-                                            <constraint firstAttribute="trailing" secondItem="lfh-YN-C90" secondAttribute="trailing" constant="8" id="cHT-b2-42k"/>
-                                            <constraint firstItem="lfh-YN-C90" firstAttribute="top" secondItem="o9P-DX-TL8" secondAttribute="top" constant="8" id="eR7-LR-2vl"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bq1-qb-qAQ" secondAttribute="trailing" id="aAV-dY-sYR"/>
+                                            <constraint firstItem="Bq1-qb-qAQ" firstAttribute="top" secondItem="o9P-DX-TL8" secondAttribute="top" id="g6x-l5-Z3s"/>
                                             <constraint firstAttribute="trailing" secondItem="NDj-Ex-Jrt" secondAttribute="trailing" id="xV7-Kp-zNb"/>
                                         </constraints>
                                     </view>
@@ -112,8 +131,8 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="mOI-FS-AaM"/>
                     <connections>
-                        <outlet property="callsignLabel" destination="GAK-5b-47y" id="iBl-Ff-9c3"/>
-                        <outlet property="fullNameLabel" destination="Zcs-zP-0Ye" id="RvM-Lx-0Bm"/>
+                        <outlet property="callsignLabel" destination="PIg-Dp-ugV" id="fH1-Ua-mFu"/>
+                        <outlet property="fullNameLabel" destination="uRG-wg-Leg" id="WAE-OD-PI3"/>
                         <outlet property="imageView" destination="NDj-Ex-Jrt" id="XoQ-sY-M5U"/>
                         <outlet property="mapView" destination="i8M-9I-CHT" id="5wJ-7I-rcN"/>
                     </connections>
@@ -251,11 +270,5 @@
     <resources>
         <image name="antenna.radiowaves.left.and.right" catalog="system" width="128" height="109"/>
         <image name="map" catalog="system" width="128" height="113"/>
-        <namedColor name="astroStatusCriticalColor">
-            <color red="1" green="0.16500000655651093" blue="0.016000000759959221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="astroStatusNormalColor">
-            <color red="0.0" green="0.88599997758865356" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
     </resources>
 </document>
