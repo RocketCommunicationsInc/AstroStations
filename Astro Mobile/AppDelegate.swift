@@ -11,17 +11,52 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    // app wide settings
-    var useAstroColors = true
+    // app wide settings, stored in UserDefaults
+    private let useAstroColorsKey = "Use Astro Colors"
+    private let alwaysDarkKey = "Always Dark"
+
+    var useAstroColors : Bool {
+    get {
+        return UserDefaults.standard.bool(forKey: useAstroColorsKey)
+    }
+    set {
+        UserDefaults.standard.set(newValue, forKey: useAstroColorsKey)
+        // doesnt work, view setup is not redone UIApplication.shared.windows.first!.rootViewController?.view.setNeedsDisplay()
+        }
+    }
+    
+    var alwaysDark : Bool {
+        get {
+            return UserDefaults.standard.bool(forKey: alwaysDarkKey)
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: alwaysDarkKey)
+            if (newValue)
+            {
+                UIApplication.shared.windows.first!.overrideUserInterfaceStyle = .dark
+            }
+            else
+            {
+                UIApplication.shared.windows.first!.overrideUserInterfaceStyle = .unspecified
+            }
+        }
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // initialize the Model singleton
         _ = TrackingStations()
+
+        // set the first-install values for these settings
+        UserDefaults.standard.register(defaults: [
+            useAstroColorsKey: true,
+            alwaysDarkKey:false
+        ])
         
+        useAstroColors = true // must set this here until setting through the UI is possible
         return true
     }
-
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

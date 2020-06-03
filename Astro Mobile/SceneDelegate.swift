@@ -39,7 +39,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UISplitViewControllerDe
             window.tintColor = .systemRed
         }
         
-        //window.overrideUserInterfaceStyle = .dark
+        // If alwaysDark is selected, must initialize here in addition to the alwaysDark setter
+        if (appDelegate.alwaysDark)
+        {
+            window.overrideUserInterfaceStyle = .dark
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
