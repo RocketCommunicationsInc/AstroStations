@@ -18,11 +18,11 @@ class StationTableViewCell: UITableViewCell {
         // Initialization code
         statusView.setAstroStatus(AstroStatus.randomStatus())
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        if (!appDelegate.useAstroColors)
-        {
-            statusView.isHidden = true
-        }
+//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//        if (!appDelegate.useAstroColors)
+//        {
+//            statusView.isHidden = true
+//        }
 
     }
 
