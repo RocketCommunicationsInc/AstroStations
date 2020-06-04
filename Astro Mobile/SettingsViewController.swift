@@ -14,6 +14,8 @@ class SettingsViewController: UITableViewController {
     @IBOutlet var alwaysDarkCell: UITableViewCell!
     @IBOutlet var astroColorsSwitch: UISwitch!
     @IBOutlet var alwaysDarkSwitch: UISwitch!
+    @IBOutlet var astroColorsCellLabel: UILabel!
+    @IBOutlet var alwaysDarkCellLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,12 +30,16 @@ class SettingsViewController: UITableViewController {
             
             // Set cells' astro colors
             astroColorsCell.backgroundColor = .astroUITableCell
+            // Set cell label color
+            astroColorsCellLabel.textColor = .astroUITableCellLabel
             // Must install a backgrouhd view to host the selected cell color
             let astroColorsCellSelectedBackgroundView = UIView()
             UIView().backgroundColor = .astroUITableSelectedCell
             astroColorsCell.selectedBackgroundView = astroColorsCellSelectedBackgroundView
             
             alwaysDarkCell.backgroundColor = .astroUITableCell
+            // Set cell label color
+            alwaysDarkCellLabel.textColor = .astroUITableCellLabel
             // Must install a backgrouhd view to host the selected cell color
             let alwaysDarkCellSelectedBackgroundView = UIView()
             alwaysDarkCellSelectedBackgroundView.backgroundColor = .astroUITableSelectedCell

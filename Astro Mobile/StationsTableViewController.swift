@@ -1,5 +1,5 @@
 //
-//  MasterViewController.swift
+//  StationsTableViewController.swift
 //  Astro Mobile
 //
 //  Created by rocketjeff on 5/6/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StationsViewController: UITableViewController {
+class StationsTableViewController: UITableViewController {
 
     var detailViewController: StationDetailViewController? = nil
     //var objects = [Any]()
@@ -89,6 +89,8 @@ class StationsViewController: UITableViewController {
             //MARK: Astro Customization
             // Set cell background color
             cell.backgroundColor = .astroUITableCell
+            // Set cell label color
+            cell.stationNameLabel.textColor = .astroUITableCellLabel
             // Install a view to host the selected cell color
             let selectedBackgroundView = UIView()
             selectedBackgroundView.backgroundColor = .astroUITableSelectedCell

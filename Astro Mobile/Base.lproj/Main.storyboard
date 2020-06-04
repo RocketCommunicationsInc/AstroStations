@@ -108,7 +108,7 @@
                                             <constraint firstAttribute="trailing" secondItem="NDj-Ex-Jrt" secondAttribute="trailing" id="xV7-Kp-zNb"/>
                                         </constraints>
                                     </view>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="i8M-9I-CHT">
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="i8M-9I-CHT" customClass="StationsMapView" customModule="Astro_Mobile" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="366.5" width="414" height="358.5"/>
                                     </mapView>
                                 </subviews>
@@ -141,15 +141,15 @@
             </objects>
             <point key="canvasLocation" x="704.34782608695662" y="127.23214285714285"/>
         </scene>
-        <!--Map-->
+        <!--Globe-->
         <scene sceneID="B2b-Mx-hRG">
             <objects>
-                <viewController id="3Ae-4C-WPR" sceneMemberID="viewController">
+                <viewController id="3Ae-4C-WPR" customClass="StationsMapViewController" customModule="Astro_Mobile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CtH-YQ-riX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ewx-Fh-h9H">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" mapType="hybridFlyover" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewx-Fh-h9H">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
                         </subviews>
@@ -162,7 +162,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PB4-41-xkE"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="MWB-a1-SxY"/>
+                    <tabBarItem key="tabBarItem" title="Globe" image="globe" catalog="system" id="MWB-a1-SxY"/>
+                    <connections>
+                        <outlet property="mapView" destination="ewx-Fh-h9H" id="bof-1l-1gb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="icw-al-xc1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -286,8 +289,10 @@
                     </navigationItem>
                     <connections>
                         <outlet property="alwaysDarkCell" destination="TvZ-ga-EAy" id="1mM-YL-b3T"/>
+                        <outlet property="alwaysDarkCellLabel" destination="k8m-12-p5I" id="7fg-cc-sPb"/>
                         <outlet property="alwaysDarkSwitch" destination="CGS-qv-dfg" id="yya-zp-cCs"/>
                         <outlet property="astroColorsCell" destination="vrZ-xi-8mz" id="xdQ-WT-Toq"/>
+                        <outlet property="astroColorsCellLabel" destination="Jnu-YS-4se" id="3Bs-K7-EdG"/>
                         <outlet property="astroColorsSwitch" destination="keV-v1-Wz9" id="e1i-hO-tK8"/>
                     </connections>
                 </tableViewController>
@@ -320,7 +325,7 @@
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">
             <objects>
-                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="StationsViewController" customModule="Astro_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="StationsTableViewController" customModule="Astro_Mobile" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="r7i-6Z-zg0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -403,6 +408,6 @@
     <resources>
         <image name="antenna.radiowaves.left.and.right" catalog="system" width="128" height="109"/>
         <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="map" catalog="system" width="128" height="113"/>
+        <image name="globe" catalog="system" width="128" height="121"/>
     </resources>
 </document>

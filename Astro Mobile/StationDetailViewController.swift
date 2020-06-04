@@ -26,21 +26,25 @@ class StationDetailViewController: UIViewController {
 
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = station {
+        if let theStation = station {
             if let label = fullNameLabel {
-                label.text = detail.fullName
+                label.text = theStation.fullName
             }
             if let imageView = imageView {
-                imageView.image = detail.getImage()
+                imageView.image = theStation.getImage()
             }
             if let callsignLabel = callsignLabel {
-                callsignLabel.text = detail.callsign
+                callsignLabel.text = theStation.callsign
             }
             if let mapView = mapView {
-                //mapView.centerCoordinate = detail.location
-                let region = MKCoordinateRegion( center: detail.location, latitudinalMeters: CLLocationDistance(exactly: 250000)!, longitudinalMeters: CLLocationDistance(exactly: 250000)!)
+                let region = MKCoordinateRegion( center: theStation.location, latitudinalMeters: CLLocationDistance(exactly: 250000)!, longitudinalMeters: CLLocationDistance(exactly: 250000)!)
                 mapView.setRegion(mapView.regionThatFits(region), animated: true)
-
+                
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = theStation.location
+                annotation.title = theStation.shortName
+                annotation.subtitle = theStation.callsign
+                mapView.addAnnotation(annotation)
             }
 
             //self.navigationItem.title = detail.fullName
