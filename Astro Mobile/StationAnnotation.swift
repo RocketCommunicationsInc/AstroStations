@@ -16,9 +16,7 @@ class StationAnnotation: NSObject, MKAnnotation {
     // Required if you set the annotation view's `canShowCallout` property to `true`
     var title: String? = "Station"
     
-//    // This property defined by `MKAnnotation` is not required.
-//    var subtitle: String? = "Placeholder"
-//    
+    // Note the TrackingStation that is represented
     var station: TrackingStation? = nil
 
     init(station:TrackingStation) {

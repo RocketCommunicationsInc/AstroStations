@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class StationDetailViewController: UIViewController {
+class StationDetailViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var fullNameLabel: UILabel!
     @IBOutlet var callsignLabel: UILabel!
@@ -40,10 +40,10 @@ class StationDetailViewController: UIViewController {
                 let region = MKCoordinateRegion( center: theStation.location, latitudinalMeters: CLLocationDistance(exactly: 250000)!, longitudinalMeters: CLLocationDistance(exactly: 250000)!)
                 mapView.setRegion(mapView.regionThatFits(region), animated: true)
                 
-                let annotation = MKPointAnnotation()
+                let annotation = StationAnnotation(station:theStation)
                 annotation.coordinate = theStation.location
                 annotation.title = theStation.shortName
-                annotation.subtitle = theStation.callsign
+                //annotation.subtitle = theStation.callsign
                 mapView.addAnnotation(annotation)
             }
 
@@ -70,5 +70,19 @@ class StationDetailViewController: UIViewController {
     }
 
 
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        if annotation is MKUserLocation {
+            return nil
+        }
+        
+        let stationAnnotation = annotation as! StationAnnotation
+        let view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: "pin")
+        let stationStatus = stationAnnotation.station?.status ?? AstroStatus.Off
+        view.markerTintColor = UIColor.colorForAstroStatus(stationStatus)
+        view.glyphImage = UIImage(named: "antenna.transmit.filled")
+        return view
+    }
+    
 }
 

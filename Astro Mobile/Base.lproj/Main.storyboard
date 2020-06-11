@@ -108,8 +108,11 @@
                                             <constraint firstAttribute="trailing" secondItem="NDj-Ex-Jrt" secondAttribute="trailing" id="xV7-Kp-zNb"/>
                                         </constraints>
                                     </view>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="i8M-9I-CHT" customClass="StationsMapView" customModule="Astro_Mobile" customModuleProvider="target">
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8M-9I-CHT">
                                         <rect key="frame" x="0.0" y="366.5" width="414" height="358.5"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="JEX-9P-axG" id="Gdb-qw-A7o"/>
+                                        </connections>
                                     </mapView>
                                 </subviews>
                                 <constraints>
