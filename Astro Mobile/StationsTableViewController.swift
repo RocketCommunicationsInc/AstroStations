@@ -16,15 +16,6 @@ class StationsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-//        navigationItem.leftBarButtonItem = editButtonItem
-//
-//        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
-//        navigationItem.rightBarButtonItem = addButton
-//        if let split = splitViewController {
-//            let controllers = split.viewControllers
-//            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
-//        }
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         if (appDelegate.useAstroColors)
@@ -98,6 +89,7 @@ class StationsTableViewController: UITableViewController {
         }
         let station = TrackingStations.sharedInstance.stations[indexPath.row]
         cell.stationNameLabel!.text = station.shortName
+        cell.statusView.setAstroStatus(station.status)
         return cell
     }
 
@@ -112,18 +104,6 @@ class StationsTableViewController: UITableViewController {
         
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            objects.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-        }
-    }
-
-*/
-    
     
     @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue)
     {

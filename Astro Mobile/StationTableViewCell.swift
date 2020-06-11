@@ -15,9 +15,7 @@ class StationTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        statusView.setAstroStatus(AstroStatus.randomStatus())
-        
+        // Initialization code        
 //        let appDelegate = UIApplication.shared.delegate as! AppDelegate
 //        if (!appDelegate.useAstroColors)
 //        {

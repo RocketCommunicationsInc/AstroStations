@@ -20,7 +20,7 @@ struct TrackingStation
     var shortName:String = ""
     var callsign:String = ""
     var location:CLLocationCoordinate2D = CLLocationCoordinate2D()
-  //  var image:UIImage?
+    var status = AstroStatus.Off
     
     
     init(fullName:String, shortName:String, callsign:String, location:CLLocationCoordinate2D) {
@@ -28,7 +28,7 @@ struct TrackingStation
         self.shortName = shortName
         self.callsign = callsign
         self.location = location
-        //self.image = UIImage(named: imageName)
+        self.status = AstroStatus.randomStatus()
     }
 
     func getImage()->UIImage
