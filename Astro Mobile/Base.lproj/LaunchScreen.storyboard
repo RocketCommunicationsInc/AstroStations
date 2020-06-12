@@ -11,7 +11,6 @@
         <!--Globe-->
         <scene sceneID="V7U-Fl-4Y3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lwW-YJ-6Xo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="1VP-BF-421" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xgo-1g-HbL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -21,13 +20,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Globe" image="globe" catalog="system" id="O5D-iO-eYp"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lwW-YJ-6Xo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1772" y="1141"/>
         </scene>
         <!--Tracking Stations-->
         <scene sceneID="7Hz-2B-KcB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ldN-9T-l9p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="AI9-ef-tZd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jlM-4y-BsP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -37,6 +36,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Tracking Stations" image="antenna.transmit" id="DbC-9c-ecb"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ldN-9T-l9p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1772" y="493"/>
         </scene>
@@ -61,7 +61,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="antenna.transmit" width="20" height="21"/>
+        <image name="antenna.transmit" width="17" height="17"/>
         <image name="globe" catalog="system" width="128" height="121"/>
         <namedColor name="Astro UI Bar Color">
             <color red="0.9179999828338623" green="0.93300002813339233" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
