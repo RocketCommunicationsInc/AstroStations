@@ -25,6 +25,12 @@ class StationDetailViewController: UIViewController, MKMapViewDelegate {
 
 
     func configureView() {
+        // if no station is set, set the first one as a default
+        if (station == nil)
+        {
+            station = TrackingStations.sharedInstance.stations.first
+        }
+        
         // Update the user interface for the detail item.
         if let theStation = station {
             if let label = fullNameLabel {

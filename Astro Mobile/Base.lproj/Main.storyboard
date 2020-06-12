@@ -60,7 +60,7 @@
                                                                 <blurEffect style="regular"/>
                                                             </vibrancyEffect>
                                                         </visualEffectView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uRG-wg-Leg">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uRG-wg-Leg">
                                                             <rect key="frame" x="4" y="0.0" width="390" height="34"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="34" id="Vpg-sW-UAE"/>
@@ -69,7 +69,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Callsign" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIg-Dp-ugV">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Callsign" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIg-Dp-ugV">
                                                             <rect key="frame" x="4" y="38" width="390" height="18"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="18" id="Owh-5j-0gm"/>
@@ -243,9 +243,9 @@
                                                         <action selector="astroColorsSwitchChanged:" destination="AIY-ee-ODd" eventType="valueChanged" id="eWz-hb-MmB"/>
                                                     </connections>
                                                 </switch>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2KB-tM-exq">
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2KB-tM-exq" userLabel="Recognizer Host View">
                                                     <rect key="frame" x="329" y="0.0" width="85" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                                                     <gestureRecognizers/>
                                                     <connections>
                                                         <outletCollection property="gestureRecognizers" destination="CUg-CZ-iRz" appends="YES" id="6nc-wX-mce"/>
@@ -409,7 +409,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Tll-UG-LXB"/>
+        <segue reference="6S0-TO-JiA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="antenna.transmit" width="20" height="21"/>
