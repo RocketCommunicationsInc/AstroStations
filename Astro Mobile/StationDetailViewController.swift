@@ -61,17 +61,10 @@ class StationDetailViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        if (appDelegate.useAstroColors)
-        {
-            //MARK: Astro Customization
-            self.navigationController?.navigationBar.barTintColor = .astroUIBar
-            self.view.backgroundColor = .astroUIBackground
-        }
-        else
-        {
-            self.view.backgroundColor = .systemBackground
-        }
+        //MARK: Astro Customization
+        self.navigationController?.navigationBar.barTintColor = .astroUIBar
+        self.view.backgroundColor = .astroUIBackground
+        
         configureView()
     }
 

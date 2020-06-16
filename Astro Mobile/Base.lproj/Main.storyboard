@@ -221,41 +221,8 @@
                         <sections>
                             <tableViewSection id="FCG-aS-fQI">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="vrZ-xi-8mz">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vrZ-xi-8mz" id="MH6-78-gh9">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Astro Colors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jnu-YS-4se">
-                                                    <rect key="frame" x="20" y="11" width="315" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="keV-v1-Wz9">
-                                                    <rect key="frame" x="347" y="6" width="49" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                                    <gestureRecognizers/>
-                                                    <connections>
-                                                        <action selector="astroColorsSwitchChanged:" destination="AIY-ee-ODd" eventType="valueChanged" id="eWz-hb-MmB"/>
-                                                    </connections>
-                                                </switch>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2KB-tM-exq" userLabel="Recognizer Host View">
-                                                    <rect key="frame" x="329" y="0.0" width="85" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
-                                                    <gestureRecognizers/>
-                                                    <connections>
-                                                        <outletCollection property="gestureRecognizers" destination="CUg-CZ-iRz" appends="YES" id="6nc-wX-mce"/>
-                                                    </connections>
-                                                </view>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="TvZ-ga-EAy" userLabel="Always Dark Cell">
-                                        <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TvZ-ga-EAy" id="nti-gq-gvk">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -269,7 +236,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGS-qv-dfg">
-                                                    <rect key="frame" x="347" y="6" width="49" height="31"/>
+                                                    <rect key="frame" x="347" y="6" width="48" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <action selector="alwaysDarkSwitchChanged:" destination="AIY-ee-ODd" eventType="valueChanged" id="7wc-7B-vVX"/>
@@ -297,18 +264,10 @@
                         <outlet property="alwaysDarkCell" destination="TvZ-ga-EAy" id="1mM-YL-b3T"/>
                         <outlet property="alwaysDarkCellLabel" destination="k8m-12-p5I" id="7fg-cc-sPb"/>
                         <outlet property="alwaysDarkSwitch" destination="CGS-qv-dfg" id="yya-zp-cCs"/>
-                        <outlet property="astroColorsCell" destination="vrZ-xi-8mz" id="xdQ-WT-Toq"/>
-                        <outlet property="astroColorsCellLabel" destination="Jnu-YS-4se" id="3Bs-K7-EdG"/>
-                        <outlet property="astroColorsSwitch" destination="keV-v1-Wz9" id="e1i-hO-tK8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eqD-bL-RQz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="6ty-eH-rma" userLabel="Exit" sceneMemberID="exit"/>
-                <tapGestureRecognizer id="CUg-CZ-iRz">
-                    <connections>
-                        <action selector="disabledAstroColorsSwitchTapped:" destination="AIY-ee-ODd" id="QG9-le-B0f"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2397" y="-1256"/>
         </scene>
@@ -409,10 +368,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6S0-TO-JiA"/>
+        <segue reference="Tll-UG-LXB"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="antenna.transmit" width="20" height="21"/>
+        <image name="antenna.transmit" width="17" height="17"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="globe" catalog="system" width="128" height="121"/>
     </resources>

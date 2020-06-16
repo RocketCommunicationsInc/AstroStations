@@ -25,21 +25,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UISplitViewControllerDe
         navigationController.topViewController?.navigationItem.leftItemsSupplementBackButton = true
         splitViewController.delegate = self
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        if (appDelegate.useAstroColors)
-        {
-            //MARK: Astro Customization
-            // Set some global astro colors
-            // Can't set the navigation controller barTintColor here, it's not setup yet? Set in the view controller's viewDidLoad instead.
-            tabViewController.tabBar.barTintColor = .astroUIBar
-            window.tintColor = .astroUITint
-        }
-        else
-        {
-            window.tintColor = .systemRed
-        }
+        //MARK: Astro Customization
+        // Set some global astro colors
+        // Can't set the navigation controller barTintColor here, it's not setup yet? Set in the view controller's viewDidLoad instead.
+        tabViewController.tabBar.barTintColor = .astroUIBar
+        window.tintColor = .astroUITint
         
         // If alwaysDark is selected, must initialize here in addition to the alwaysDark setter
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
         if (appDelegate.alwaysDark)
         {
             window.overrideUserInterfaceStyle = .dark

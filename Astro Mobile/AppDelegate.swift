@@ -12,18 +12,8 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // app wide settings, stored in UserDefaults
-    private let useAstroColorsKey = "Use Astro Colors"
     private let alwaysDarkKey = "Always Dark"
 
-    var useAstroColors : Bool {
-    get {
-        return UserDefaults.standard.bool(forKey: useAstroColorsKey)
-    }
-    set {
-        UserDefaults.standard.set(newValue, forKey: useAstroColorsKey)
-        // doesnt work, view setup is not redone UIApplication.shared.windows.first!.rootViewController?.view.setNeedsDisplay()
-        }
-    }
     
     var alwaysDark : Bool {
         get {
@@ -49,11 +39,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // set the first-install values for these settings
         UserDefaults.standard.register(defaults: [
-            useAstroColorsKey: true,
             alwaysDarkKey:false
         ])
         
-        useAstroColors = true // must set this here until setting through the UI is possible
         return true
     }
     
