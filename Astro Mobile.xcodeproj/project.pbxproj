@@ -14,12 +14,6 @@
 		7C177F49247DD4DE00D965EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C177F48247DD4DE00D965EA /* Assets.xcassets */; };
 		7C225998246F45EA002C1848 /* TrackingStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA81FB9246F3B0D000778A1 /* TrackingStation.swift */; };
 		7C225999246F45ED002C1848 /* TrackingStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA81FBB246F3C98000778A1 /* TrackingStations.swift */; };
-		7C3F4B542475D647009FC19E /* AstroColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F4B4C2475D646009FC19E /* AstroColors.swift */; };
-		7C3F4B552475D647009FC19E /* AstroStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F4B4D2475D646009FC19E /* AstroStatus.swift */; };
-		7C3F4B562475D647009FC19E /* AstroSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F4B4E2475D646009FC19E /* AstroSymbols.swift */; };
-		7C3F4B572475D647009FC19E /* AstroSharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3F4B4F2475D646009FC19E /* AstroSharedAssets.xcassets */; };
-		7C3F4B582475D647009FC19E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7C3F4B502475D647009FC19E /* README.md */; };
-		7C3F4B592475D647009FC19E /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F4B512475D647009FC19E /* StatusView.swift */; };
 		7C7CEF30247472D3002E39D5 /* GUAM.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CEF29247472D2002E39D5 /* GUAM.jpg */; };
 		7C7CEF31247472D3002E39D5 /* COOK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CEF2A247472D3002E39D5 /* COOK.jpg */; };
 		7C7CEF32247472D3002E39D5 /* POGO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CEF2B247472D3002E39D5 /* POGO.jpg */; };
@@ -27,6 +21,14 @@
 		7C7CEF34247472D3002E39D5 /* LION.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CEF2D247472D3002E39D5 /* LION.jpg */; };
 		7C7CEF35247472D3002E39D5 /* BOSS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CEF2E247472D3002E39D5 /* BOSS.jpg */; };
 		7C7CEF36247472D3002E39D5 /* HULA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CEF2F247472D3002E39D5 /* HULA.jpg */; };
+		7C9BAA5A2499794600103C27 /* AstroColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BAA522499794600103C27 /* AstroColors.swift */; };
+		7C9BAA5B2499794600103C27 /* AstroStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BAA532499794600103C27 /* AstroStatus.swift */; };
+		7C9BAA5C2499794600103C27 /* AstroSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BAA542499794600103C27 /* AstroSymbols.swift */; };
+		7C9BAA5D2499794600103C27 /* AstroSharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9BAA552499794600103C27 /* AstroSharedAssets.xcassets */; };
+		7C9BAA5E2499794600103C27 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7C9BAA562499794600103C27 /* README.md */; };
+		7C9BAA5F2499794600103C27 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BAA572499794600103C27 /* StatusView.swift */; };
+		7C9BAA602499794600103C27 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7C9BAA582499794600103C27 /* .gitignore */; };
+		7C9BAA612499794600103C27 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7C9BAA592499794600103C27 /* .gitattributes */; };
 		7CA6A4FC246357EA00177F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A4FB246357EA00177F87 /* AppDelegate.swift */; };
 		7CA6A4FE246357EA00177F87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A4FD246357EA00177F87 /* SceneDelegate.swift */; };
 		7CA6A500246357EA00177F87 /* StationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A4FF246357EA00177F87 /* StationsTableViewController.swift */; };
@@ -41,12 +43,6 @@
 		7C1453D124882A6B00C48237 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		7C1453D72489AC8800C48237 /* StationsMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsMapViewController.swift; sourceTree = "<group>"; };
 		7C177F48247DD4DE00D965EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7C3F4B4C2475D646009FC19E /* AstroColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroColors.swift; sourceTree = "<group>"; };
-		7C3F4B4D2475D646009FC19E /* AstroStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroStatus.swift; sourceTree = "<group>"; };
-		7C3F4B4E2475D646009FC19E /* AstroSymbols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroSymbols.swift; sourceTree = "<group>"; };
-		7C3F4B4F2475D646009FC19E /* AstroSharedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AstroSharedAssets.xcassets; sourceTree = "<group>"; };
-		7C3F4B502475D647009FC19E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		7C3F4B512475D647009FC19E /* StatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		7C7CEF29247472D2002E39D5 /* GUAM.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GUAM.jpg; sourceTree = "<group>"; };
 		7C7CEF2A247472D3002E39D5 /* COOK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = COOK.jpg; sourceTree = "<group>"; };
 		7C7CEF2B247472D3002E39D5 /* POGO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = POGO.jpg; sourceTree = "<group>"; };
@@ -54,6 +50,14 @@
 		7C7CEF2D247472D3002E39D5 /* LION.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LION.jpg; sourceTree = "<group>"; };
 		7C7CEF2E247472D3002E39D5 /* BOSS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BOSS.jpg; sourceTree = "<group>"; };
 		7C7CEF2F247472D3002E39D5 /* HULA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HULA.jpg; sourceTree = "<group>"; };
+		7C9BAA522499794600103C27 /* AstroColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroColors.swift; sourceTree = "<group>"; };
+		7C9BAA532499794600103C27 /* AstroStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroStatus.swift; sourceTree = "<group>"; };
+		7C9BAA542499794600103C27 /* AstroSymbols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroSymbols.swift; sourceTree = "<group>"; };
+		7C9BAA552499794600103C27 /* AstroSharedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AstroSharedAssets.xcassets; sourceTree = "<group>"; };
+		7C9BAA562499794600103C27 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7C9BAA572499794600103C27 /* StatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		7C9BAA582499794600103C27 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7C9BAA592499794600103C27 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		7CA6A4F8246357EA00177F87 /* Astro Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Astro Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA6A4FB246357EA00177F87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CA6A4FD246357EA00177F87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,19 +81,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7C3F4B4B2475D646009FC19E /* astro-swift-foundation */ = {
-			isa = PBXGroup;
-			children = (
-				7C3F4B4C2475D646009FC19E /* AstroColors.swift */,
-				7C3F4B4D2475D646009FC19E /* AstroStatus.swift */,
-				7C3F4B4E2475D646009FC19E /* AstroSymbols.swift */,
-				7C3F4B512475D647009FC19E /* StatusView.swift */,
-				7C3F4B4F2475D646009FC19E /* AstroSharedAssets.xcassets */,
-				7C3F4B502475D647009FC19E /* README.md */,
-			);
-			path = "astro-swift-foundation";
-			sourceTree = "<group>";
-		};
 		7C7CEF37247472DF002E39D5 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,10 +95,26 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		7C9BAA512499794600103C27 /* astro-swift-foundation */ = {
+			isa = PBXGroup;
+			children = (
+				7C9BAA522499794600103C27 /* AstroColors.swift */,
+				7C9BAA532499794600103C27 /* AstroStatus.swift */,
+				7C9BAA542499794600103C27 /* AstroSymbols.swift */,
+				7C9BAA552499794600103C27 /* AstroSharedAssets.xcassets */,
+				7C9BAA562499794600103C27 /* README.md */,
+				7C9BAA572499794600103C27 /* StatusView.swift */,
+				7C9BAA582499794600103C27 /* .gitignore */,
+				7C9BAA592499794600103C27 /* .gitattributes */,
+			);
+			name = "astro-swift-foundation";
+			path = "../astro-swift-foundation";
+			sourceTree = "<group>";
+		};
 		7CA6A4EF246357EA00177F87 = {
 			isa = PBXGroup;
 			children = (
-				7C3F4B4B2475D646009FC19E /* astro-swift-foundation */,
+				7C9BAA512499794600103C27 /* astro-swift-foundation */,
 				7CA6A4FA246357EA00177F87 /* Astro Mobile */,
 				7CA6A4F9246357EA00177F87 /* Products */,
 			);
@@ -215,11 +222,13 @@
 				7C7CEF33247472D3002E39D5 /* REEF.jpg in Resources */,
 				7C177F49247DD4DE00D965EA /* Assets.xcassets in Resources */,
 				7C7CEF30247472D3002E39D5 /* GUAM.jpg in Resources */,
+				7C9BAA5E2499794600103C27 /* README.md in Resources */,
+				7C9BAA5D2499794600103C27 /* AstroSharedAssets.xcassets in Resources */,
 				7C7CEF31247472D3002E39D5 /* COOK.jpg in Resources */,
-				7C3F4B582475D647009FC19E /* README.md in Resources */,
-				7C3F4B572475D647009FC19E /* AstroSharedAssets.xcassets in Resources */,
 				7C7CEF32247472D3002E39D5 /* POGO.jpg in Resources */,
 				7CA6A505246357EA00177F87 /* Main.storyboard in Resources */,
+				7C9BAA612499794600103C27 /* .gitattributes in Resources */,
+				7C9BAA602499794600103C27 /* .gitignore in Resources */,
 				7C7CEF36247472D3002E39D5 /* HULA.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,20 +240,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C3F4B562475D647009FC19E /* AstroSymbols.swift in Sources */,
 				7C225998246F45EA002C1848 /* TrackingStation.swift in Sources */,
-				7C3F4B552475D647009FC19E /* AstroStatus.swift in Sources */,
+				7C9BAA5B2499794600103C27 /* AstroStatus.swift in Sources */,
 				7C12C7672481BB1F00DBEB1B /* StationTableViewCell.swift in Sources */,
 				7CA6A4FC246357EA00177F87 /* AppDelegate.swift in Sources */,
+				7C9BAA5F2499794600103C27 /* StatusView.swift in Sources */,
 				7C0675792492C6F80076D0AC /* StationAnnotation.swift in Sources */,
-				7C3F4B592475D647009FC19E /* StatusView.swift in Sources */,
 				7CA6A4FE246357EA00177F87 /* SceneDelegate.swift in Sources */,
 				7CA6A500246357EA00177F87 /* StationsTableViewController.swift in Sources */,
-				7C3F4B542475D647009FC19E /* AstroColors.swift in Sources */,
 				7C1453D82489AC8800C48237 /* StationsMapViewController.swift in Sources */,
+				7C9BAA5A2499794600103C27 /* AstroColors.swift in Sources */,
 				7CA6A502246357EA00177F87 /* StationDetailViewController.swift in Sources */,
 				7C225999246F45ED002C1848 /* TrackingStations.swift in Sources */,
 				7C1453D224882A6B00C48237 /* SettingsViewController.swift in Sources */,
+				7C9BAA5C2499794600103C27 /* AstroSymbols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
