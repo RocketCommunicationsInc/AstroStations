@@ -24,11 +24,11 @@
 		7C9BAA5A2499794600103C27 /* AstroColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BAA522499794600103C27 /* AstroColors.swift */; };
 		7C9BAA5B2499794600103C27 /* AstroStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BAA532499794600103C27 /* AstroStatus.swift */; };
 		7C9BAA5C2499794600103C27 /* AstroSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BAA542499794600103C27 /* AstroSymbols.swift */; };
-		7C9BAA5D2499794600103C27 /* AstroSharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9BAA552499794600103C27 /* AstroSharedAssets.xcassets */; };
 		7C9BAA5E2499794600103C27 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7C9BAA562499794600103C27 /* README.md */; };
 		7C9BAA5F2499794600103C27 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BAA572499794600103C27 /* StatusView.swift */; };
 		7C9BAA602499794600103C27 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7C9BAA582499794600103C27 /* .gitignore */; };
 		7C9BAA612499794600103C27 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7C9BAA592499794600103C27 /* .gitattributes */; };
+		7C9BAA6724998FAB00103C27 /* AstroFoundationAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9BAA552499794600103C27 /* AstroFoundationAssets.xcassets */; };
 		7CA6A4FC246357EA00177F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A4FB246357EA00177F87 /* AppDelegate.swift */; };
 		7CA6A4FE246357EA00177F87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A4FD246357EA00177F87 /* SceneDelegate.swift */; };
 		7CA6A500246357EA00177F87 /* StationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A4FF246357EA00177F87 /* StationsTableViewController.swift */; };
@@ -53,7 +53,7 @@
 		7C9BAA522499794600103C27 /* AstroColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroColors.swift; sourceTree = "<group>"; };
 		7C9BAA532499794600103C27 /* AstroStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroStatus.swift; sourceTree = "<group>"; };
 		7C9BAA542499794600103C27 /* AstroSymbols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroSymbols.swift; sourceTree = "<group>"; };
-		7C9BAA552499794600103C27 /* AstroSharedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AstroSharedAssets.xcassets; sourceTree = "<group>"; };
+		7C9BAA552499794600103C27 /* AstroFoundationAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AstroFoundationAssets.xcassets; sourceTree = "<group>"; };
 		7C9BAA562499794600103C27 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7C9BAA572499794600103C27 /* StatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		7C9BAA582499794600103C27 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 				7C9BAA522499794600103C27 /* AstroColors.swift */,
 				7C9BAA532499794600103C27 /* AstroStatus.swift */,
 				7C9BAA542499794600103C27 /* AstroSymbols.swift */,
-				7C9BAA552499794600103C27 /* AstroSharedAssets.xcassets */,
+				7C9BAA552499794600103C27 /* AstroFoundationAssets.xcassets */,
 				7C9BAA562499794600103C27 /* README.md */,
 				7C9BAA572499794600103C27 /* StatusView.swift */,
 				7C9BAA582499794600103C27 /* .gitignore */,
@@ -217,13 +217,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CA6A50A246357EB00177F87 /* LaunchScreen.storyboard in Resources */,
+				7C9BAA6724998FAB00103C27 /* AstroFoundationAssets.xcassets in Resources */,
 				7C7CEF34247472D3002E39D5 /* LION.jpg in Resources */,
 				7C7CEF35247472D3002E39D5 /* BOSS.jpg in Resources */,
 				7C7CEF33247472D3002E39D5 /* REEF.jpg in Resources */,
 				7C177F49247DD4DE00D965EA /* Assets.xcassets in Resources */,
 				7C7CEF30247472D3002E39D5 /* GUAM.jpg in Resources */,
 				7C9BAA5E2499794600103C27 /* README.md in Resources */,
-				7C9BAA5D2499794600103C27 /* AstroSharedAssets.xcassets in Resources */,
 				7C7CEF31247472D3002E39D5 /* COOK.jpg in Resources */,
 				7C7CEF32247472D3002E39D5 /* POGO.jpg in Resources */,
 				7CA6A505246357EA00177F87 /* Main.storyboard in Resources */,
