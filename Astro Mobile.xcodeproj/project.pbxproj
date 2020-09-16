@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,20 +21,13 @@
 		7C7CEF34247472D3002E39D5 /* LION.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CEF2D247472D3002E39D5 /* LION.jpg */; };
 		7C7CEF35247472D3002E39D5 /* BOSS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CEF2E247472D3002E39D5 /* BOSS.jpg */; };
 		7C7CEF36247472D3002E39D5 /* HULA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CEF2F247472D3002E39D5 /* HULA.jpg */; };
-		7C9BAA5A2499794600103C27 /* AstroColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BAA522499794600103C27 /* AstroColors.swift */; };
-		7C9BAA5B2499794600103C27 /* AstroStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BAA532499794600103C27 /* AstroStatus.swift */; };
-		7C9BAA5C2499794600103C27 /* AstroSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BAA542499794600103C27 /* AstroSymbols.swift */; };
-		7C9BAA5E2499794600103C27 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7C9BAA562499794600103C27 /* README.md */; };
-		7C9BAA5F2499794600103C27 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BAA572499794600103C27 /* StatusView.swift */; };
-		7C9BAA602499794600103C27 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7C9BAA582499794600103C27 /* .gitignore */; };
-		7C9BAA612499794600103C27 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7C9BAA592499794600103C27 /* .gitattributes */; };
-		7C9BAA6724998FAB00103C27 /* AstroFoundationAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9BAA552499794600103C27 /* AstroFoundationAssets.xcassets */; };
 		7CA6A4FC246357EA00177F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A4FB246357EA00177F87 /* AppDelegate.swift */; };
 		7CA6A4FE246357EA00177F87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A4FD246357EA00177F87 /* SceneDelegate.swift */; };
 		7CA6A500246357EA00177F87 /* StationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A4FF246357EA00177F87 /* StationsTableViewController.swift */; };
 		7CA6A502246357EA00177F87 /* StationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6A501246357EA00177F87 /* StationDetailViewController.swift */; };
 		7CA6A505246357EA00177F87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA6A503246357EA00177F87 /* Main.storyboard */; };
 		7CA6A50A246357EB00177F87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA6A508246357EB00177F87 /* LaunchScreen.storyboard */; };
+		7CDE86712507EBFA00DBBEA5 /* AstroSwiftFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 7CDE86702507EBFA00DBBEA5 /* AstroSwiftFoundation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,14 +43,6 @@
 		7C7CEF2D247472D3002E39D5 /* LION.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LION.jpg; sourceTree = "<group>"; };
 		7C7CEF2E247472D3002E39D5 /* BOSS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BOSS.jpg; sourceTree = "<group>"; };
 		7C7CEF2F247472D3002E39D5 /* HULA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HULA.jpg; sourceTree = "<group>"; };
-		7C9BAA522499794600103C27 /* AstroColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroColors.swift; sourceTree = "<group>"; };
-		7C9BAA532499794600103C27 /* AstroStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroStatus.swift; sourceTree = "<group>"; };
-		7C9BAA542499794600103C27 /* AstroSymbols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroSymbols.swift; sourceTree = "<group>"; };
-		7C9BAA552499794600103C27 /* AstroFoundationAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AstroFoundationAssets.xcassets; sourceTree = "<group>"; };
-		7C9BAA562499794600103C27 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		7C9BAA572499794600103C27 /* StatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
-		7C9BAA582499794600103C27 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		7C9BAA592499794600103C27 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		7CA6A4F8246357EA00177F87 /* Astro Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Astro Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA6A4FB246357EA00177F87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CA6A4FD246357EA00177F87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CDE86712507EBFA00DBBEA5 /* AstroSwiftFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,26 +81,9 @@
 			path = images;
 			sourceTree = "<group>";
 		};
-		7C9BAA512499794600103C27 /* astro-swift-foundation */ = {
-			isa = PBXGroup;
-			children = (
-				7C9BAA522499794600103C27 /* AstroColors.swift */,
-				7C9BAA532499794600103C27 /* AstroStatus.swift */,
-				7C9BAA542499794600103C27 /* AstroSymbols.swift */,
-				7C9BAA552499794600103C27 /* AstroFoundationAssets.xcassets */,
-				7C9BAA562499794600103C27 /* README.md */,
-				7C9BAA572499794600103C27 /* StatusView.swift */,
-				7C9BAA582499794600103C27 /* .gitignore */,
-				7C9BAA592499794600103C27 /* .gitattributes */,
-			);
-			name = "astro-swift-foundation";
-			path = "../astro-swift-foundation";
-			sourceTree = "<group>";
-		};
 		7CA6A4EF246357EA00177F87 = {
 			isa = PBXGroup;
 			children = (
-				7C9BAA512499794600103C27 /* astro-swift-foundation */,
 				7CA6A4FA246357EA00177F87 /* Astro Mobile */,
 				7CA6A4F9246357EA00177F87 /* Products */,
 			);
@@ -174,6 +143,9 @@
 			dependencies = (
 			);
 			name = "Astro Mobile";
+			packageProductDependencies = (
+				7CDE86702507EBFA00DBBEA5 /* AstroSwiftFoundation */,
+			);
 			productName = "Astro Mobile";
 			productReference = 7CA6A4F8246357EA00177F87 /* Astro Mobile.app */;
 			productType = "com.apple.product-type.application";
@@ -185,7 +157,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Rocket Communucations Inc.";
 				TargetAttributes = {
 					7CA6A4F7246357EA00177F87 = {
@@ -202,6 +174,9 @@
 				Base,
 			);
 			mainGroup = 7CA6A4EF246357EA00177F87;
+			packageReferences = (
+				7CDE866F2507EBFA00DBBEA5 /* XCRemoteSwiftPackageReference "AstroSwiftFoundation" */,
+			);
 			productRefGroup = 7CA6A4F9246357EA00177F87 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -217,18 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CA6A50A246357EB00177F87 /* LaunchScreen.storyboard in Resources */,
-				7C9BAA6724998FAB00103C27 /* AstroFoundationAssets.xcassets in Resources */,
 				7C7CEF34247472D3002E39D5 /* LION.jpg in Resources */,
 				7C7CEF35247472D3002E39D5 /* BOSS.jpg in Resources */,
 				7C7CEF33247472D3002E39D5 /* REEF.jpg in Resources */,
 				7C177F49247DD4DE00D965EA /* Assets.xcassets in Resources */,
 				7C7CEF30247472D3002E39D5 /* GUAM.jpg in Resources */,
-				7C9BAA5E2499794600103C27 /* README.md in Resources */,
 				7C7CEF31247472D3002E39D5 /* COOK.jpg in Resources */,
 				7C7CEF32247472D3002E39D5 /* POGO.jpg in Resources */,
 				7CA6A505246357EA00177F87 /* Main.storyboard in Resources */,
-				7C9BAA612499794600103C27 /* .gitattributes in Resources */,
-				7C9BAA602499794600103C27 /* .gitignore in Resources */,
 				7C7CEF36247472D3002E39D5 /* HULA.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,19 +212,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C225998246F45EA002C1848 /* TrackingStation.swift in Sources */,
-				7C9BAA5B2499794600103C27 /* AstroStatus.swift in Sources */,
 				7C12C7672481BB1F00DBEB1B /* StationTableViewCell.swift in Sources */,
 				7CA6A4FC246357EA00177F87 /* AppDelegate.swift in Sources */,
-				7C9BAA5F2499794600103C27 /* StatusView.swift in Sources */,
 				7C0675792492C6F80076D0AC /* StationAnnotation.swift in Sources */,
 				7CA6A4FE246357EA00177F87 /* SceneDelegate.swift in Sources */,
 				7CA6A500246357EA00177F87 /* StationsTableViewController.swift in Sources */,
 				7C1453D82489AC8800C48237 /* StationsMapViewController.swift in Sources */,
-				7C9BAA5A2499794600103C27 /* AstroColors.swift in Sources */,
 				7CA6A502246357EA00177F87 /* StationDetailViewController.swift in Sources */,
 				7C225999246F45ED002C1848 /* TrackingStations.swift in Sources */,
 				7C1453D224882A6B00C48237 /* SettingsViewController.swift in Sources */,
-				7C9BAA5C2499794600103C27 /* AstroSymbols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +272,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -365,6 +333,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -451,6 +420,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7CDE866F2507EBFA00DBBEA5 /* XCRemoteSwiftPackageReference "AstroSwiftFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RocketCommunicationsInc/AstroSwiftFoundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7CDE86702507EBFA00DBBEA5 /* AstroSwiftFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CDE866F2507EBFA00DBBEA5 /* XCRemoteSwiftPackageReference "AstroSwiftFoundation" */;
+			productName = AstroSwiftFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7CA6A4F0246357EA00177F87 /* Project object */;
 }

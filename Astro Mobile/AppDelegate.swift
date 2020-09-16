@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AstroSwiftFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

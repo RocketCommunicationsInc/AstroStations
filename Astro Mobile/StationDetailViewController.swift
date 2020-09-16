@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import AstroSwiftFoundation
 
 class StationDetailViewController: UIViewController, MKMapViewDelegate {
 

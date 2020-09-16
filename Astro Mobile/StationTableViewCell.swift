@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AstroSwiftFoundation
 
 class StationTableViewCell: UITableViewCell {
 
