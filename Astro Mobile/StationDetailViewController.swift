@@ -16,6 +16,7 @@ class StationDetailViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet var callsignLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var mapView: MKMapView!
+    @IBOutlet weak var outerVisualEffect: UIVisualEffectView!
     
     var station: TrackingStation? {
         didSet {
@@ -61,7 +62,9 @@ class StationDetailViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        outerVisualEffect.layer.cornerRadius = 10
+        outerVisualEffect.clipsToBounds = true
+
         //MARK: Astro Customization
         self.navigationController?.navigationBar.barTintColor = .astroUIBar
         self.view.backgroundColor = .astroUIBackground
