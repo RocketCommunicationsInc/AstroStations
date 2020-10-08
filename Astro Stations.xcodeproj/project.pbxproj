@@ -167,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7CA6A4F3246357EA00177F87 /* Build configuration list for PBXProject "Astro Stations Demo" */;
+			buildConfigurationList = 7CA6A4F3246357EA00177F87 /* Build configuration list for PBXProject "Astro Stations" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -375,7 +375,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rocketcom.Astro-Stations-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rocketcom.Astro-Mobile-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -393,7 +393,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rocketcom.Astro-Stations-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rocketcom.Astro-Mobile-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -403,7 +403,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7CA6A4F3246357EA00177F87 /* Build configuration list for PBXProject "Astro Stations Demo" */ = {
+		7CA6A4F3246357EA00177F87 /* Build configuration list for PBXProject "Astro Stations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7CA6A50C246357EB00177F87 /* Debug */,

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Astro Mobile
+//  Astro Stations
 //
 //  Created by rocketjeff on 5/6/20.
 //  Copyright © 2020 Rocket Communucations Inc. All rights reserved.
@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // set the first-install values for these settings
         UserDefaults.standard.register(defaults: [
-            alwaysDarkKey:false
+            alwaysDarkKey:true
         ])
         
         return true

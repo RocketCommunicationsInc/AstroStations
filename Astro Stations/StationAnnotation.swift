@@ -1,6 +1,6 @@
 //
 //  StationAnnotation.swift
-//  Astro Mobile
+//  Astro Stations
 //
 //  Created by rocketjeff on 6/11/20.
 //  Copyright © 2020 Rocket Communucations Inc. All rights reserved.

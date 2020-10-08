@@ -1,6 +1,6 @@
 //
 //  StationTableViewCell.swift
-//  Astro Mobile
+//  Astro Stations
 //
 //  Created by rocketjeff on 5/29/20.
 //  Copyright © 2020 Rocket Communucations Inc. All rights reserved.

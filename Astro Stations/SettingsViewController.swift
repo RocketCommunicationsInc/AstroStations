@@ -1,6 +1,6 @@
 //
 //  SettingsViewController.swift
-//  Astro Mobile
+//  Astro Stations
 //
 //  Created by rocketjeff on 6/3/20.
 //  Copyright © 2020 Rocket Communucations Inc. All rights reserved.
