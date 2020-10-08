@@ -43,7 +43,8 @@
 		7C7CEF2D247472D3002E39D5 /* LION.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LION.jpg; sourceTree = "<group>"; };
 		7C7CEF2E247472D3002E39D5 /* BOSS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BOSS.jpg; sourceTree = "<group>"; };
 		7C7CEF2F247472D3002E39D5 /* HULA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HULA.jpg; sourceTree = "<group>"; };
-		7CA6A4F8246357EA00177F87 /* Astro Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Astro Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CA2FC6725225B0700963801 /* AstroSwiftFoundation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AstroSwiftFoundation; path = ../../AstroSwiftFoundation; sourceTree = "<group>"; };
+		7CA6A4F8246357EA00177F87 /* Astro Stations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Astro Stations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA6A4FB246357EA00177F87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CA6A4FD246357EA00177F87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7CA6A4FF246357EA00177F87 /* StationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsTableViewController.swift; sourceTree = "<group>"; };
@@ -84,7 +85,7 @@
 		7CA6A4EF246357EA00177F87 = {
 			isa = PBXGroup;
 			children = (
-				7CA6A4FA246357EA00177F87 /* Astro Mobile */,
+				7CA6A4FA246357EA00177F87 /* Astro Stations */,
 				7CA6A4F9246357EA00177F87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,12 +93,12 @@
 		7CA6A4F9246357EA00177F87 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7CA6A4F8246357EA00177F87 /* Astro Mobile.app */,
+				7CA6A4F8246357EA00177F87 /* Astro Stations.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7CA6A4FA246357EA00177F87 /* Astro Mobile */ = {
+		7CA6A4FA246357EA00177F87 /* Astro Stations */ = {
 			isa = PBXGroup;
 			children = (
 				7CA6A4FB246357EA00177F87 /* AppDelegate.swift */,
@@ -113,8 +114,9 @@
 				7C177F48247DD4DE00D965EA /* Assets.xcassets */,
 				7CA6A508246357EB00177F87 /* LaunchScreen.storyboard */,
 				7CA6A50B246357EB00177F87 /* Info.plist */,
+				7CA2FC6725225B0700963801 /* AstroSwiftFoundation */,
 			);
-			path = "Astro Mobile";
+			path = "Astro Stations";
 			sourceTree = "<group>";
 		};
 		7CA81FBD246F3E63000778A1 /* Model */ = {
@@ -130,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7CA6A4F7246357EA00177F87 /* Astro Mobile */ = {
+		7CA6A4F7246357EA00177F87 /* Astro Stations */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7CA6A50E246357EB00177F87 /* Build configuration list for PBXNativeTarget "Astro Mobile" */;
+			buildConfigurationList = 7CA6A50E246357EB00177F87 /* Build configuration list for PBXNativeTarget "Astro Stations" */;
 			buildPhases = (
 				7CA6A4F4246357EA00177F87 /* Sources */,
 				7CA6A4F5246357EA00177F87 /* Frameworks */,
@@ -142,12 +144,12 @@
 			);
 			dependencies = (
 			);
-			name = "Astro Mobile";
+			name = "Astro Stations";
 			packageProductDependencies = (
 				7CDE86702507EBFA00DBBEA5 /* AstroSwiftFoundation */,
 			);
 			productName = "Astro Mobile";
-			productReference = 7CA6A4F8246357EA00177F87 /* Astro Mobile.app */;
+			productReference = 7CA6A4F8246357EA00177F87 /* Astro Stations.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -165,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7CA6A4F3246357EA00177F87 /* Build configuration list for PBXProject "Astro Mobile" */;
+			buildConfigurationList = 7CA6A4F3246357EA00177F87 /* Build configuration list for PBXProject "Astro Stations Demo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -181,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7CA6A4F7246357EA00177F87 /* Astro Mobile */,
+				7CA6A4F7246357EA00177F87 /* Astro Stations */,
 			);
 		};
 /* End PBXProject section */
@@ -368,12 +370,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4S8Z5V45T;
-				INFOPLIST_FILE = "Astro Mobile/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Astro Stations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rocketcom.Astro-Mobile-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rocketcom.Astro-Stations-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -386,12 +388,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4S8Z5V45T;
-				INFOPLIST_FILE = "Astro Mobile/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Astro Stations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rocketcom.Astro-Mobile-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rocketcom.Astro-Stations-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -401,7 +403,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7CA6A4F3246357EA00177F87 /* Build configuration list for PBXProject "Astro Mobile" */ = {
+		7CA6A4F3246357EA00177F87 /* Build configuration list for PBXProject "Astro Stations Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7CA6A50C246357EB00177F87 /* Debug */,
@@ -410,7 +412,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7CA6A50E246357EB00177F87 /* Build configuration list for PBXNativeTarget "Astro Mobile" */ = {
+		7CA6A50E246357EB00177F87 /* Build configuration list for PBXNativeTarget "Astro Stations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7CA6A50F246357EB00177F87 /* Debug */,

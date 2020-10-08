@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AstroSwiftFoundation",
+        "repositoryURL": "https://github.com/RocketCommunicationsInc/AstroSwiftFoundation.git",
+        "state": {
+          "branch": null,
+          "revision": "e70e8614b3eed63d46e965381b19de2e1ade5cfc",
+          "version": "1.0.6"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
