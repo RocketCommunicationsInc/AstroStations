@@ -43,7 +43,6 @@
 		7C7CEF2D247472D3002E39D5 /* LION.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LION.jpg; sourceTree = "<group>"; };
 		7C7CEF2E247472D3002E39D5 /* BOSS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BOSS.jpg; sourceTree = "<group>"; };
 		7C7CEF2F247472D3002E39D5 /* HULA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HULA.jpg; sourceTree = "<group>"; };
-		7CA2FC6725225B0700963801 /* AstroSwiftFoundation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AstroSwiftFoundation; path = ../../AstroSwiftFoundation; sourceTree = "<group>"; };
 		7CA6A4F8246357EA00177F87 /* Astro Stations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Astro Stations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA6A4FB246357EA00177F87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CA6A4FD246357EA00177F87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +113,6 @@
 				7C177F48247DD4DE00D965EA /* Assets.xcassets */,
 				7CA6A508246357EB00177F87 /* LaunchScreen.storyboard */,
 				7CA6A50B246357EB00177F87 /* Info.plist */,
-				7CA2FC6725225B0700963801 /* AstroSwiftFoundation */,
 			);
 			path = "Astro Stations";
 			sourceTree = "<group>";
