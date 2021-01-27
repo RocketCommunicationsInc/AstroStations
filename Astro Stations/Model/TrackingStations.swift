@@ -25,7 +25,7 @@ struct TrackingStations
         
         stations.append(TrackingStation(fullName:"Diego Garcia Station", shortName:"Diego Garcia", callsign:"REEF", location: CLLocationCoordinate2D(latitude: -7.3195005, longitude: 72.4228556)))
 
-        stations.append(TrackingStation(fullName:"Hawaii Tracking Station", shortName:"Hawaii", callsign:"HULA", location: CLLocationCoordinate2D(latitude: 20.9138889, longitude: -157.0594444)))
+        stations.append(TrackingStation(fullName:"Hawaii Tracking Station", shortName:"Hawaii", callsign:"HULA", location: CLLocationCoordinate2D(latitude: 21.561389, longitude: -158.239222)))
 
         stations.append(TrackingStation(fullName:"New Hampshire Station", shortName:"New Hampshire", callsign:"BOSS", location: CLLocationCoordinate2D(latitude: 42.9761945, longitude: -71.6939626)))
 
