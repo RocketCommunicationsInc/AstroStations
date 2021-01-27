@@ -28,7 +28,7 @@ struct TrackingStation
         self.shortName = shortName
         self.callsign = callsign
         self.location = location
-        self.status = AstroStatus.Normal //AstroStatus.randomStatus() show random status to see a variety of Astro status colors and symbols
+        self.status = AstroStatus.randomStatus() // show random status to see a variety of Astro status colors and symbols
     }
 
     func getImage()->UIImage
