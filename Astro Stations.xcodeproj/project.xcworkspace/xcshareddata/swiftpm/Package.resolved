@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "AstroSwiftFoundation",
-        "repositoryURL": "https://github.com/RocketCommunicationsInc/AstroSwiftFoundation.git",
-        "state": {
-          "branch": null,
-          "revision": "5355e40e37b958401759051f11ac009488ae5997",
-          "version": "1.0.9"
-        }
+  "pins" : [
+    {
+      "identity" : "astroswiftfoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RocketCommunicationsInc/AstroSwiftFoundation.git",
+      "state" : {
+        "branch" : "newSemanticColors",
+        "revision" : "680c8a645e4b8d3ced11055d74bd376f1a3ad28b"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }

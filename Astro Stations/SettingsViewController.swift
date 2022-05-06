@@ -20,17 +20,15 @@ class SettingsViewController: UITableViewController {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
             //MARK: Astro Customization
-            self.navigationController?.navigationBar.barTintColor = .astroUIBar
-            self.tableView.backgroundColor = .astroUITableCell
-            self.tableView.separatorColor = .astroUITableSeparator
+        self.tableView.backgroundColor = .astroUIBackground
             
-            alwaysDarkCell.backgroundColor = .astroUITableCell
+            alwaysDarkCell.backgroundColor = .astroUIBackground
             // Set cell label color
-            alwaysDarkCellLabel.textColor = .astroUITableCellLabel
-            // Must install a background view to host the selected cell color
-            let alwaysDarkCellSelectedBackgroundView = UIView()
-            alwaysDarkCellSelectedBackgroundView.backgroundColor = .astroUITableSelectedCell
-            alwaysDarkCell.selectedBackgroundView = alwaysDarkCellSelectedBackgroundView
+        alwaysDarkCellLabel.textColor = .label
+//            // Must install a background view to host the selected cell color
+//            let alwaysDarkCellSelectedBackgroundView = UIView()
+//            alwaysDarkCellSelectedBackgroundView.backgroundColor = .astroUIBackground
+//            alwaysDarkCell.selectedBackgroundView = alwaysDarkCellSelectedBackgroundView
 
         alwaysDarkSwitch.isOn = appDelegate.alwaysDark
     }

@@ -66,7 +66,6 @@ class StationDetailViewController: UIViewController, MKMapViewDelegate {
         outerVisualEffect.clipsToBounds = true
 
         //MARK: Astro Customization
-        self.navigationController?.navigationBar.barTintColor = .astroUIBar
         self.view.backgroundColor = .astroUIBackground
         
         configureView()

@@ -28,8 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UISplitViewControllerDe
         //MARK: Astro Customization
         // Set some global astro colors
         // Can't set the navigation controller barTintColor here, it's not setup yet? Set in the view controller's viewDidLoad instead.
-        tabViewController.tabBar.barTintColor = .astroUIBar
-        window.tintColor = .astroUITint
+        window.tintColor = .astroUIAccent
         
         // If alwaysDark is selected, must initialize here in addition to the alwaysDark setter
         let appDelegate = UIApplication.shared.delegate as! AppDelegate

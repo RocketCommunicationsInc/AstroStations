@@ -18,9 +18,7 @@ class StationsTableViewController: UITableViewController {
         super.viewDidLoad()
         
         //MARK: Astro Customization
-        self.navigationController?.navigationBar.barTintColor = .astroUIBar
-        self.tableView.backgroundColor = .astroUITableCell
-        self.tableView.separatorColor = .astroUITableSeparator
+        self.tableView.backgroundColor = .astroUIBackground
         
         // set initial selection
         self.tableView.selectRow(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: .top)
@@ -72,13 +70,13 @@ class StationsTableViewController: UITableViewController {
         
         //MARK: Astro Customization
         // Set cell background color
-        cell.backgroundColor = .astroUITableCell
+        cell.backgroundColor = .astroUIBackground
         // Set cell label color
-        cell.stationNameLabel.textColor = .astroUITableCellLabel
-        // Install a view to host the selected cell color
-        let selectedBackgroundView = UIView()
-        selectedBackgroundView.backgroundColor = .astroUITableSelectedCell
-        cell.selectedBackgroundView = selectedBackgroundView
+        cell.stationNameLabel.textColor = .label
+//        // Install a view to host the selected cell color
+//        let selectedBackgroundView = UIView()
+//        selectedBackgroundView.backgroundColor = .astroUITableSelectedCell
+//        cell.selectedBackgroundView = selectedBackgroundView
 
         let station = TrackingStations.sharedInstance.stations[indexPath.row]
         cell.stationNameLabel!.text = station.shortName
