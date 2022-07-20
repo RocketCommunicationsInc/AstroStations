@@ -20,7 +20,7 @@ struct TrackingStation
     var shortName:String = ""
     var callsign:String = ""
     var location:CLLocationCoordinate2D = CLLocationCoordinate2D()
-    var status = AstroStatus.Off
+    var status = AstroStatus.off
     
     
     init(fullName:String, shortName:String, callsign:String, location:CLLocationCoordinate2D) {

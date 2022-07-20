@@ -424,7 +424,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RocketCommunicationsInc/AstroSwiftFoundation.git";
 			requirement = {
-				branch = newSemanticColors;
+				branch = "Platform-43";
 				kind = branch;
 			};
 		};
