@@ -66,7 +66,6 @@ class StationDetailViewController: UIViewController, MKMapViewDelegate {
         outerVisualEffect.clipsToBounds = true
 
         //MARK: Astro Customization
-        self.navigationController?.navigationBar.barTintColor = .astroUIBar
         self.view.backgroundColor = .astroUIBackground
         
         configureView()
@@ -81,7 +80,7 @@ class StationDetailViewController: UIViewController, MKMapViewDelegate {
         
         let stationAnnotation = annotation as! StationAnnotation
         let view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: "pin")
-        let stationStatus = stationAnnotation.station?.status ?? AstroStatus.Off
+        let stationStatus = stationAnnotation.station?.status ?? AstroStatus.off
         view.markerTintColor = UIColor.colorForAstroStatus(stationStatus)
         view.glyphImage = UIImage(named: "antenna.transmit.filled")
         return view

@@ -24,11 +24,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UserDefaults.standard.set(newValue, forKey: alwaysDarkKey)
             if (newValue)
             {
-                UIApplication.shared.windows.first!.overrideUserInterfaceStyle = .dark
+                let scenes = UIApplication.shared.connectedScenes
+                let windowScene = scenes.first as? UIWindowScene
+                let window = windowScene?.windows.first
+                window!.overrideUserInterfaceStyle = .dark
             }
             else
             {
-                UIApplication.shared.windows.first!.overrideUserInterfaceStyle = .unspecified
+                let scenes = UIApplication.shared.connectedScenes
+                let windowScene = scenes.first as? UIWindowScene
+                let window = windowScene?.windows.first
+                window!.overrideUserInterfaceStyle = .unspecified
             }
         }
     }
